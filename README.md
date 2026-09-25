@@ -16,6 +16,7 @@ Here I share useful tools, experiments, and what I learn along the way.
 
 ## Useful repos
 
+- [YouTube content](https://github.com/gustavonline/youtube-content): lessons, notes, and useful files from my videos.
 - [Skills Atlas](https://github.com/onlinesourdough/Skills-Atlas): a place to explore agent skills.
 - [Agent Work Review](https://github.com/onlinesourdough/Agent-Work-Review): a practical review of how you work with AI agents.
 - [Slack MCP Server](https://github.com/gustavonline/slack-mcp-server-private-channels): Slack tools for agents, including private channels.
