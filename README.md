@@ -7,8 +7,8 @@ I'm a founder with a background in business and software architecture. I'm inter
 ## What I'm working on
 
 - **[Software & Defence Factory](https://github.com/arcitai/software-and-defence-factory):** tools for building, checking, and reviewing software with AI agents.
-- **[AIOS Pilot](https://github.com/arcitai/aios-pilot):** a workspace for business context, people, and AI agents. Currently in development.
-- **[Pi Desktop](https://github.com/gustavonline/pi-desktop):** a desktop app for the Pi coding agent.
+- **[AIOS Plugin & Method](https://github.com/onlinesourdough/aios-plugin):** a workspace for business context, people, and AI agents. Currently in development.
+- **[Pi Desktop](https://github.com/gustavonline/pi-desktop):** a desktop app for the Pi coding agent. Development ownership has been passed onto the community.
 
 ## Useful repos
 
