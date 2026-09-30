@@ -2,13 +2,13 @@
 
 I'm a founder with a background in business and software architecture. I'm interested in how AI can help us build useful software and better ways of working.
 
-[Website](https://gustavonline.com) · [YouTube](https://www.youtube.com/@gustavonline) · [LinkedIn](https://www.linkedin.com/in/gustavonline/)
+[Gustav Online](https://gustavonline.com) · [YouTube](https://www.youtube.com/@gustavonline) · [LinkedIn](https://www.linkedin.com/in/gustavonline/)
 
 ## What I'm working on
 
-- **[Software & Defence Factory](https://github.com/arcitai/software-and-defence-factory):** tools for building, checking, and reviewing software with AI agents.
-- **[AIOS Plugin & Method](https://github.com/onlinesourdough/aios-plugin):** a workspace for business context, people, and AI agents. Currently in development.
-- **[Danish AI Infrastructure](https://github.com/kastanje-labs):** a vscode extension to get started and a platform for reliable, safe and cheap AI. Currently in development.
+- **[onlinesourdough](https://onlinesourdough.com):** practical AI resources and hands-on guidance. AIOS brings business context and reusable ways of working to AI agents.
+- **[Arc’IT AI](https://arcitai.com):** done-for-you AI and software delivery. The public [Software & Defence Factory](https://github.com/arcitai/software-and-defence-factory) provides tools for building, checking, and reviewing software with AI agents.
+- **[Kastanje Lab](https://github.com/kastanje-labs):** AI infrastructure and tools, including the public [VS Code extension](https://github.com/kastanje-labs/vscode-extension) and the [Kastanje platform](https://kastanje-demo.gustavonline.workers.dev/), which is currently in development.
 - **[Pi Desktop](https://github.com/gustavonline/pi-desktop):** a desktop app for the Pi coding agent. Development ownership has been passed onto the community.
 
 ## Useful repos
