@@ -6,8 +6,8 @@ I'm a founder with a background in business and software architecture. I'm inter
 
 ## What I'm working on
 
-- **[onlinesourdough](https://onlinesourdough.com):** practical AI resources and hands-on guidance. [AIOS](https://github.com/onlinesourdough/AIOS-Plugin) brings business context and reusable ways of working to AI agents.
-- **[Arc’IT AI](https://arcitai.com):** done-for-you AI and software delivery. The public [Factory (Software & Defence)](https://github.com/arcitai/factory-software-defence) provides tools for building, checking, and reviewing software with AI agents.
+- **[onlinesourdough](https://onlinesourdough.com):** practical AI resources and hands-on guidance. [AIOS](https://github.com/onlinesourdough/AIOS-Plugin) brings context and reusable ways of working to AI agents.
+- **[Arc’IT AI](https://arcitai.com):** done-for-you AI and software delivery. The public [Factory (Software & Defence)](https://github.com/arcitai/factory) provides tools for building, checking, and reviewing software with AI agents.
 - **[Kastanje Lab](https://github.com/kastanje-labs):** AI infrastructure and tools, including the public [VS Code extension](https://github.com/kastanje-labs/vscode-extension). The platform is currently in development.
 - **[Pi Desktop](https://github.com/gustavonline/pi-desktop):** a desktop app for the Pi coding agent. Development ownership has been passed onto the community.
 
