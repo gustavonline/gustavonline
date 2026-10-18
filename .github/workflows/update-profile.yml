@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scripts/**', '.github/workflows/update-profile.yml']
+    paths: ['README.md', 'scripts/**', '.github/workflows/update-profile.yml']
 permissions:
   contents: write
 concurrency:

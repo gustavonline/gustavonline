@@ -1,9 +1,35 @@
 # Profile refresh
 
-`node scripts/update-profile.mjs` refreshes the marked **What I'm working on** table in the root README. It chooses the repository with the most commits attributed to Gustav by GitHub's contribution API in the previous 30 days, once per owner: `arcitai`, `onlinesourdough`, `gustavonline`. GitHub's contribution rules apply, including eligible branches and author attribution. Private repositories, forks, archives and profile infrastructure are excluded. A missing owner or an incomplete API response fails without replacing the published files.
+`node scripts/update-profile.mjs` refreshes **Working on right now**, the grouped
+**Useful repos** list and `data/github-profile.json` together. The README is the
+editorial source: edit visible project names/descriptions there. Its hidden
+`portfolio-config` comment defines anchors, the eligible active set, categories,
+statuses and optional icons. There is no competing catalog in the script.
 
-The script then parses that README table to produce `data/github-profile.json`, together with the real contribution calendar. The website consumes this projection; it does not select its own projects. The README is the human-readable source for the selection and summaries. Known project summaries live in the small catalog in the updater; other repositories use their public GitHub description. Useful repos remain curated by hand.
+Factory and AIOS are stable anchors. The third slot uses the most commits by
+Gustav on the public default branch in 30 days, among explicitly selected tools.
+GitHub pins break activity ties, then README order. An incumbent remains until a
+challenger has at least five commits and 1.5 times its activity. Portfolio and
+community-handoff projects cannot take a focus slot. Stars are metadata, never a
+ranking signal. Explicitly maintained forks such as OpenPaperDesign are eligible;
+other forks, private and archived repositories are excluded.
 
-GitHub Actions runs daily and on manual dispatch. It uses its own scoped `GITHUB_TOKEN`; no personal token or frontend secret is needed. A local run can use the existing `gh` login. Test with `node --test scripts/update-profile.test.mjs`.
+All other catalog projects appear under Tools & experiments, Community or
+Resources. Within a group pins come first, then recent commits and README order.
+The website uses the resulting `projects` and `moreProjects` arrays in that order;
+it does not rank or select independently. Names and summaries are parsed back
+from the rendered README before the projection is written. Dates make activity
+claims valid even if a snapshot is old. Recent commits are not the same measure
+as all contribution events and are not a quality score.
 
-For the local website preview, copy `data/github-profile.json` to its `public/data/` directory. `VITE_GITHUB_PROFILE_REFRESH=true` also enables a public refresh from this repository; failed refreshes retain the bundled snapshot.
+The calendar uses GitHub's exact day counts and levels, including anonymized
+private activity when the owner enables that public profile setting. Only dates,
+counts and levels are exported; no private repository identities or content.
+GitHub Actions runs daily/manual with its scoped `GITHUB_TOKEN`, without a
+personal secret. A local run may use the existing `gh` login. Incomplete remote
+data or malformed README configuration fails before generated files are written.
+
+Validate with `node --test scripts/update-profile.test.mjs`. For local website
+preview, copy the generated JSON to `public/data/github-profile.json`.
+`VITE_GITHUB_PROFILE_REFRESH=true` enables public refresh; the website retains a
+valid newer-schema snapshot if the remote response is older or invalid.
