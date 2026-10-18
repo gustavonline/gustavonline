@@ -18,9 +18,11 @@ All other catalog projects appear under Tools & experiments, Community or
 Resources. Within a group pins come first, then recent commits and README order.
 The website uses the resulting `projects` and `moreProjects` arrays in that order;
 it does not rank or select independently. Names and summaries are parsed back
-from the rendered README before the projection is written. Dates make activity
-claims valid even if a snapshot is old. Recent commits are not the same measure
-as all contribution events and are not a quality score.
+from the rendered README before the projection is written. The public profile
+uses short project bullets; commit counts and selection rules stay out of the
+displayed text. Counts and their date range remain in the JSON for selection.
+Recent commits are not the same measure as all contribution events and are not
+a quality score.
 
 The calendar uses GitHub's exact day counts and levels, including anonymized
 private activity when the owner enables that public profile setting. Only dates,

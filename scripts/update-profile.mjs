@@ -58,11 +58,8 @@ export function chooseFocus(projects, config, previous = []) {
   return focus;
 }
 
-export function renderProfile(readme, focus, more, date) {
-  const active = 'The methods and tools I’m focused on at the moment.\n\n' +
-    '| Project | Focus | Recent commits |\n| --- | --- | ---: |\n' +
-    focus.map((p) => `| [${p.name}](${p.url}) | ${p.description} | ${p.commits} |`).join('\n') +
-    `\n\n<sub>Public commits by me in the 30 days to ${date}. Factory and AIOS stay in focus; the third project follows activity among my selected tools.</sub>`;
+export function renderProfile(readme, focus, more) {
+  const active = focus.map((p) => `- [${p.name}](${p.url}): ${p.description}`).join('\n');
   const useful = Object.entries(categories).map(([category, title]) => {
     const items = more.filter((p) => p.category === category);
     return items.length ? `**${title}**\n\n` + items.map((p) => `- [${p.name}](${p.url}): ${p.description}`).join('\n') : '';
@@ -128,7 +125,7 @@ export async function main() {
   catch (error) { if (error.code !== 'ENOENT') throw error; }
   const focus = chooseFocus(projects, config, previous);
   const more = projects.filter((p) => !focus.some((f) => f.repo === p.repo)).sort((a, b) => Object.keys(categories).indexOf(a.category) - Object.keys(categories).indexOf(b.category) || Number(b.pinned) - Number(a.pinned) || b.commits - a.commits || catalog.findIndex((p) => p.repo === a.repo) - catalog.findIndex((p) => p.repo === b.repo));
-  const readme = renderProfile(original, focus, more, now.toISOString().slice(0, 10));
+  const readme = renderProfile(original, focus, more);
   const renderedCatalog = catalogFromReadme(readme).projects;
   const projectOutput = (p) => {
     const visible = renderedCatalog.find((item) => item.repo === p.repo);

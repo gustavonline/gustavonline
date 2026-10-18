@@ -31,13 +31,25 @@ test('README roundtrip preserves owner prose and makes displayed names/summaries
   assert.equal(parsed.projects.length, 6);
   const focus = chooseFocus(fixture, config);
   const rest = fixture.filter((p) => !focus.includes(p));
-  const rendered = renderProfile(template(), focus, rest, '2026-10-18');
+  const rendered = renderProfile(template(), focus, rest);
   assert.ok(rendered.startsWith('Owner-edited introduction.'));
   assert.ok(rendered.includes('**Open-source organisations**\n[Arc’IT AI]'));
   assert.equal((rendered.match(/## Working on right now/g) ?? []).length, 1);
   assert.equal(catalogFromReadme(rendered).projects.length, 6);
   const edited = rendered.replace('[bridge](https://github.com/gustavonline/bridge): A useful project.', '[Bridge](https://github.com/gustavonline/bridge): A revised explanation.');
   assert.equal(catalogFromReadme(edited).projects.find((p) => p.repo.endsWith('/bridge')).description, 'A revised explanation.');
+});
+test('profile refresh keeps focus as editable bullets without commit tables or selection commentary', () => {
+  const focus = chooseFocus(fixture, config);
+  const rest = fixture.filter((p) => !focus.includes(p));
+  const rendered = renderProfile(template(), focus, rest);
+  const block = rendered.split('<!-- active-projects:start -->')[1].split('<!-- active-projects:end -->')[0];
+  assert.equal(block.trim().split('\n').length, 3);
+  assert.ok(block.trim().split('\n').every((line) => line.startsWith('- [')));
+  assert.doesNotMatch(block, /\||commits|30 days|Updated|stay in focus|follows activity/i);
+  const edited = rendered.replace('[factory](https://github.com/arcitai/factory): A useful project.', '[Factory](https://github.com/arcitai/factory): My modular software toolkit.');
+  assert.equal(catalogFromReadme(edited).projects.find((p) => p.repo === 'arcitai/factory').description, 'My modular software toolkit.');
+  assert.equal(renderProfile(rendered, focus, rest), rendered);
 });
 test('ambiguous, external or incomplete README sources fail before output generation', () => {
   assert.throws(() => replaceBlock('no markers', 'active-projects', ''), /exactly one/);

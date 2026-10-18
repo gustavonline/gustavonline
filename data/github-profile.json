@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T10:31:55.227Z",
+  "generatedAt": "2026-10-18T14:10:59.002Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "1dee3b87c183ed02b443db07156cf449cbd12253",
-  "readmeSha256": "1fe6dd3c129947c243201f7e433690ad81e8d48d23c51a3db4e7e2cb7885672d",
+  "sourceRevision": "local-preview",
+  "readmeSha256": "40b419ff82514231e55936cd533db88da99a36e382ac8eac6930b4461d8eee23",
   "windowDays": 30,
   "projects": [
     {
@@ -11,7 +11,7 @@
       "repo": "arcitai/factory",
       "name": "Factory",
       "url": "https://github.com/arcitai/factory",
-      "description": "A modular foundation for building and reviewing software with agents, including domain modules such as Power BI.",
+      "description": "My modular setup for building software with agents. Add a domain module to make it a Power BI factory, for example.",
       "commits": 35,
       "isPublic": true,
       "category": "tools",
@@ -25,7 +25,7 @@
       "repo": "onlinesourdough/AIOS-plugin",
       "name": "AIOS",
       "url": "https://github.com/onlinesourdough/AIOS-plugin",
-      "description": "Context, practical methods and reusable skills for working with AI agents.",
+      "description": "The context, methods and reusable skills I use to work with AI agents.",
       "commits": 59,
       "isPublic": true,
       "category": "tools",
@@ -39,7 +39,7 @@
       "repo": "arcitai/openpaperdesign",
       "name": "OpenPaperDesign",
       "url": "https://github.com/arcitai/openpaperdesign",
-      "description": "A shared design canvas and agent workflow built on paper-rs, with an editable browser canvas and Codex integration.",
+      "description": "A design canvas I can share with an agent in Codex. Built on paper-rs.",
       "commits": 79,
       "isPublic": true,
       "category": "tools",
@@ -55,7 +55,7 @@
       "repo": "gustavonline/omarchy-llama-cpp-local-ai",
       "name": "Local AI for Omarchy",
       "url": "https://github.com/gustavonline/omarchy-llama-cpp-local-ai",
-      "description": "Prepared llama.cpp runtimes, local inference endpoints and an optional local Copilot.",
+      "description": "My setup for running local models on Omarchy with llama.cpp and an optional local Copilot.",
       "commits": 2,
       "isPublic": true,
       "category": "tools",
@@ -68,7 +68,7 @@
       "repo": "gustavonline/codex-claude-bridge",
       "name": "Codex Bridge",
       "url": "https://github.com/gustavonline/codex-claude-bridge",
-      "description": "One Codex workspace across models, conversations, files and tools. The current bridge adds Claude.",
+      "description": "Use Codex as one workspace across models, conversations, files and tools. The first bridge connects Claude.",
       "commits": 11,
       "isPublic": true,
       "category": "tools",
@@ -82,7 +82,7 @@
       "repo": "gustavonline/local-ai-pi-worker",
       "name": "Local Pi worker",
       "url": "https://github.com/gustavonline/local-ai-pi-worker",
-      "description": "An isolated local worker with a command-line interface and native RPC for delegated work.",
+      "description": "A separate local Pi worker for delegating tasks through the command line or native RPC.",
       "commits": 3,
       "isPublic": true,
       "category": "tools",
@@ -95,7 +95,7 @@
       "repo": "arcitai/Agentic-PowerBI-System",
       "name": "Power BI for Factory",
       "url": "https://github.com/arcitai/Agentic-PowerBI-System",
-      "description": "Power BI foundations, delivery methods and specialist skills. Being adapted into a domain module for Factory.",
+      "description": "Power BI foundations, delivery methods and skills. I’m turning it into a module for Factory.",
       "commits": 2,
       "isPublic": true,
       "category": "tools",
@@ -108,7 +108,7 @@
       "repo": "gustavonline/pi-desktop",
       "name": "Pi Desktop",
       "url": "https://github.com/gustavonline/pi-desktop",
-      "description": "A desktop app for the Pi coding agent. Original development is paused and open to community maintainers.",
+      "description": "A desktop app I built for the Pi coding agent. I’ve paused development; community maintainers are welcome.",
       "commits": 0,
       "isPublic": true,
       "category": "community",
@@ -135,7 +135,7 @@
       "repo": "gustavonline/gustavonline-website",
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
-      "description": "My personal portfolio: current projects, open source work and real GitHub activity.",
+      "description": "My website, with current projects and ways to get in touch.",
       "commits": 25,
       "isPublic": true,
       "category": "resources",
@@ -148,7 +148,7 @@
   "contributions": {
     "from": "2025-10-19",
     "to": "2026-10-18",
-    "total": 43665,
+    "total": 43666,
     "weeks": [
       {
         "days": [
@@ -2547,7 +2547,7 @@
           {
             "date": "2026-10-18",
             "weekday": 0,
-            "count": 8,
+            "count": 9,
             "level": 1
           }
         ]
