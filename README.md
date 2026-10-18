@@ -1,6 +1,6 @@
 # Gustav Anderson
 
-I'm a founder with a background in business and software architecture. I'm interested in how AI can help us build useful software and better ways of working.
+I'm a founder with a background in business architecture and software development.
 
 [gustavonline](https://gustavonline.com) · [YouTube](https://www.youtube.com/@gustavonline) · [LinkedIn](https://www.linkedin.com/in/gustavandersonn/)
 
