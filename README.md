@@ -7,9 +7,9 @@ I'm a founder with a background in business architecture and software developmen
 ## Working on right now
 
 <!-- active-projects:start -->
-- [Factory](https://github.com/arcitai/factory): My modular setup for building software with agents. Add a domain module to make it a Power BI factory, for example.
-- [AIOS](https://github.com/onlinesourdough/AIOS-plugin): The context, methods and reusable skills I use to work with AI agents.
-- [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): A design canvas I can share with an agent in Codex. Built on paper-rs.
+- [Factory](https://github.com/arcitai/factory): I’m building Factory to give software work with agents a modular structure, from understanding the problem to reviewing and delivering the result.
+- [AIOS](https://github.com/onlinesourdough/AIOS-plugin): I built AIOS to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.
+- [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): I wanted an infinite, editable canvas inside my AI agent’s workspace, where we could work through architecture diagrams, systems and interface designs together without leaving the conversation.
 <!-- active-projects:end -->
 
 ## Useful repos
