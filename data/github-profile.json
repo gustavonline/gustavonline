@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 2,
-  "generatedAt": "2026-10-19T10:56:45.648Z",
+  "schemaVersion": 3,
+  "generatedAt": "2026-10-19T12:03:25.055Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "35ac3b46abeaf06b182ee204ffa4e0008387a492",
-  "readmeSha256": "40b419ff82514231e55936cd533db88da99a36e382ac8eac6930b4461d8eee23",
+  "sourceRevision": "793d77477b04042a195373523833ca7277141c6a",
+  "readmeSha256": "07ab321e69acd0fed5b4c4298c0f667d0b1b48698abd77f38c9eb8fbab83c1f0",
   "windowDays": 30,
   "projects": [
     {
@@ -11,12 +11,23 @@
       "repo": "arcitai/factory",
       "name": "Factory",
       "url": "https://github.com/arcitai/factory",
-      "description": "My modular setup for building software with agents. Add a domain module to make it a Power BI factory, for example.",
-      "commits": 35,
+      "description": "I’m building Factory to give software work with agents a modular structure, from understanding the problem to reviewing and delivering the result.",
+      "commits": 37,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/factory.svg",
+      "readme": {
+        "section": "Why I built this",
+        "url": "https://github.com/arcitai/factory/blob/2896c4710e44d86d305fdfa032b84a6feff3f2d1/README.md#why-i-built-this",
+        "revision": "2896c4710e44d86d305fdfa032b84a6feff3f2d1",
+        "sha256": "9bf1481a274e8d86d02e446572d8634c04a5826c6808f1e77154bd611e3a686e",
+        "paragraphs": [
+          "I’m building Factory to give software work with agents a modular structure, from understanding the problem to reviewing and delivering the result.",
+          "I build on established tools and standards: Codex, Claude Code and GitHub, with T3 Code as the workspace. Factory adds methods and reusable skills around them, keeping extra code and maintenance small.",
+          "Foundation prepares the project, AgentOps directs the work, and the Agentic Development Lifecycle (ADLC) covers specification, implementation, review and delivery. I’m developing a Power BI module that also covers the surrounding data and software work, and exploring modules for research and reverse engineering."
+        ]
+      },
       "pinned": true,
       "stars": 1
     },
@@ -25,12 +36,23 @@
       "repo": "onlinesourdough/AIOS-plugin",
       "name": "AIOS",
       "url": "https://github.com/onlinesourdough/AIOS-plugin",
-      "description": "The context, methods and reusable skills I use to work with AI agents.",
-      "commits": 59,
+      "description": "I built AIOS to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
+      "commits": 61,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
+      "readme": {
+        "section": "Why I built this",
+        "url": "https://github.com/onlinesourdough/AIOS-plugin/blob/e9f4d2d81a512e4a2fb74c8313a19fab925a862b/README.md#why-i-built-this",
+        "revision": "e9f4d2d81a512e4a2fb74c8313a19fab925a862b",
+        "sha256": "10f01dbc2a2ea155a59cdcf56d7aa5c7136d167813d5c4cb1b49dd8d585d839b",
+        "paragraphs": [
+          "I built AIOS to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
+          "AIOS installs as a native plugin in Codex and Claude Code and adds reusable skills for planning, building, reviewing and writing. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
+          "Your context stays in a home you choose, such as Notion or a repository. The app provides the models, tools and permissions; AIOS helps the assistant find and maintain the context it needs."
+        ]
+      },
       "pinned": true,
       "stars": 1
     },
@@ -39,12 +61,23 @@
       "repo": "arcitai/openpaperdesign",
       "name": "OpenPaperDesign",
       "url": "https://github.com/arcitai/openpaperdesign",
-      "description": "A design canvas I can share with an agent in Codex. Built on paper-rs.",
-      "commits": 79,
+      "description": "I wanted an infinite, editable canvas inside my AI agent’s workspace, where we could work through architecture diagrams, systems and interface designs together without leaving the conversation.",
+      "commits": 81,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/openpaperdesign.svg",
+      "readme": {
+        "section": "Why I built this",
+        "url": "https://github.com/arcitai/openpaperdesign/blob/1eb11feb2b9b7d8f2ab8100b14eaa267a3b09097/README.md#why-i-built-this",
+        "revision": "1eb11feb2b9b7d8f2ab8100b14eaa267a3b09097",
+        "sha256": "20b783793407f587522fa1a6e98901bc3fff42a789c8b505f46c4894faaf6de0",
+        "paragraphs": [
+          "I wanted an infinite, editable canvas inside my AI agent’s workspace, where we could work through architecture diagrams, systems and interface designs together without leaving the conversation.",
+          "OpenPaperDesign is built on paper-rs by [Michael Shimeles](https://github.com/michaelshimeles). I reuse its editor, follow open standards where they exist and add only the integration the agent workspace needs. That keeps the extra code and maintenance small.",
+          "In Codex, I can sketch a system and refine a layout with the agent. Project files stay local and the canvas stays editable. I’m also exploring how AI-generated images can become part of that workflow."
+        ]
+      },
       "pinned": false,
       "stars": 0
     }
@@ -148,7 +181,7 @@
   "contributions": {
     "from": "2025-10-20",
     "to": "2026-10-19",
-    "total": 43667,
+    "total": 43680,
     "weeks": [
       {
         "days": [
@@ -2547,8 +2580,8 @@
           {
             "date": "2026-10-19",
             "weekday": 1,
-            "count": 0,
-            "level": 0
+            "count": 13,
+            "level": 1
           }
         ]
       }

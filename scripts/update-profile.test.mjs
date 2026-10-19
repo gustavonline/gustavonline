@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { catalogFromReadme, chooseFocus, renderProfile, replaceBlock, calendarProjection } from './update-profile.mjs';
+import { catalogFromReadme, chooseFocus, renderProfile, replaceBlock, calendarProjection, readmeParagraphs, loadProjectReadmes } from './update-profile.mjs';
 
 // Synthetic repositories/counts exercise editorial policy, not production activity.
 const make = (repo, commits, options = {}) => ({ repo, owner: repo.split('/')[0], url: `https://github.com/${repo}`, name: repo.split('/')[1], description: 'A useful project.', category: 'tools', status: 'Open source', commits, isPublic: true, pinned: false, ...options });
@@ -65,4 +65,51 @@ test('calendar preserves full anonymized counts and exact levels without normali
   assert.throws(() => calendarProjection({ ...calendar, totalContributions: 752 }), /total mismatch/);
   const broken = structuredClone(calendar); broken.weeks[1].contributionDays[0].date = '2026-10-25';
   assert.throws(() => calendarProjection(broken), /Non-contiguous/);
+});
+
+test('README section preserves paragraph boundaries and stops before the next section or upstream README', () => {
+  const story = '# Tool\n\n## Why I built this\n\nI wanted a canvas.\n\nIt keeps diagrams\nand designs together.\n\n';
+  for (const ending of ['## Install\nNever include this.', '---\n# Upstream\nNever include this.', '']) {
+    assert.deepEqual(readmeParagraphs((story + ending).replaceAll('\n', '\r\n')), ['I wanted a canvas.', 'It keeps diagrams and designs together.']);
+  }
+  const examples = '```md\n## Why I built this\nNot a live section.\n```\n<!-- ## Why I built this -->\n';
+  assert.deepEqual(readmeParagraphs(examples + story), ['I wanted a canvas.', 'It keeps diagrams and designs together.']);
+});
+
+test('missing, duplicate, empty, oversized or structured sections fail rather than inventing website copy', () => {
+  const heading = '## Why I built this\n\n';
+  for (const invalid of ['No section', heading, heading + 'One.\n\n' + heading + 'Two.', heading + 'x'.repeat(301), heading + 'A.\n\nB.\n\nC.\n\nD.\n\nE.', heading + '- A list.', heading + '<script>no</script>', heading + '[linked](https://example.com)', heading + '```sh\ncode\n```', heading + '### Nested\nText']) {
+    assert.throws(() => readmeParagraphs(invalid));
+  }
+  for (const body of ['Valid intro.\n\n~~~js\ncode\n~~~', '    indentedCode()', 'Valid intro.\n\n    indentedCode()', 'Valid intro.\n\nTitle\n=====', 'Valid intro.\n\nTitle\n---']) {
+    assert.throws(() => readmeParagraphs(heading + body), /plain paragraphs/);
+  }
+});
+
+test('one project README supplies both the visible profile summary and full website prose', async () => {
+  const item = { ...fixture[0], readmeSection: 'Why I built this' };
+  const text = '## Why I built this\n\nThe project motivation.\n\nThe technical approach.\n';
+  const source = { text, revision: 'a'.repeat(40), url: `https://github.com/${item.repo}/blob/${'a'.repeat(40)}/README.md#why-i-built-this` };
+  const [updated, untouched] = await loadProjectReadmes([item, fixture[1]], async () => source);
+  assert.equal(updated.description, 'The project motivation.');
+  assert.deepEqual(updated.readme.paragraphs, ['The project motivation.', 'The technical approach.']);
+  assert.equal(updated.readme.revision, source.revision);
+  assert.match(updated.readme.sha256, /^[a-f0-9]{64}$/);
+  assert.equal(untouched, fixture[1]);
+  const rendered = renderProfile(template(), [updated, fixture[1], fixture[2]], fixture.slice(3));
+  assert.equal(catalogFromReadme(rendered).projects[0].description, updated.readme.paragraphs[0]);
+  assert.doesNotMatch(rendered, /The technical approach/);
+  await assert.rejects(loadProjectReadmes([item], async () => ({ ...source, text: 'missing' })), /exactly one/);
+  await assert.rejects(loadProjectReadmes([{ ...item, isPublic: false }], async () => { throw new Error('Must not read private source'); }), /Refusing private/);
+});
+
+test('attribution links survive extraction; unsupported links and rich markup abort refresh', () => {
+  const intro = '## Why I built this\n\nI wanted a canvas.\n\n';
+  const credit = 'Built on paper-rs by [Michael Shimeles](https://github.com/michaelshimeles).';
+  assert.deepEqual(readmeParagraphs(intro + credit), ['I wanted a canvas.', credit]);
+  assert.deepEqual(readmeParagraphs(intro + 'See [paper-rs](https://github.com/michaelshimeles/paper-rs).'), ['I wanted a canvas.', 'See [paper-rs](https://github.com/michaelshimeles/paper-rs).']);
+  for (const invalid of ['[author](javascript:alert(1))', '[author](https://github.com.evil.test/person)', '[author](https://github.com@evil.test/person)', '[author](https://example.com/person)', '[author](//github.com/person)', '![image](https://github.com/person)', '[**bold**](https://github.com/person)', '[<img>](https://github.com/person)']) {
+    assert.throws(() => readmeParagraphs(intro + invalid), /plain paragraphs/);
+  }
+  assert.throws(() => readmeParagraphs('## Why I built this\n\n' + credit), /first paragraph/);
 });
