@@ -53,11 +53,13 @@ I'm a founder with a background in business architecture and software developmen
     "arcitai/factory": {
       "category": "tools",
       "status": "Open source",
+      "readmeSection": "Why I built this",
       "icon": "/assets/project-marks/factory.svg"
     },
     "onlinesourdough/AIOS-plugin": {
       "category": "tools",
       "status": "Open source",
+      "readmeSection": "Why I built this",
       "icon": "/assets/project-marks/aios.svg"
     },
     "gustavonline/codex-claude-bridge": {
@@ -68,6 +70,7 @@ I'm a founder with a background in business architecture and software developmen
     "arcitai/openpaperdesign": {
       "category": "tools",
       "status": "Open source",
+      "readmeSection": "Why I built this",
       "allowFork": true,
       "icon": "/assets/project-marks/openpaperdesign.svg"
     },
