@@ -1,6 +1,6 @@
 # Gustav Anderson
 
-I'm a founder with a background in business architecture and software development.
+Founder
 
 [gustavonline](https://gustavonline.com) · [YouTube](https://www.youtube.com/@gustavonline) · [LinkedIn](https://www.linkedin.com/in/gustavandersonn/)
 
