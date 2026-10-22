@@ -32,10 +32,6 @@ I'm a founder with a background in business architecture and software developmen
 - [Portfolio](https://github.com/gustavonline/gustavonline-website): My website, with current projects and ways to get in touch.
 <!-- useful-projects:end -->
 
-**Open-source organisations**
-
-[Arc’IT AI](https://github.com/arcitai) · [onlinesourdough](https://github.com/onlinesourdough) · [Kastanje Labs](https://github.com/kastanje-labs)
-
 <!-- portfolio-config
 {
   "anchors": [
