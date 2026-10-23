@@ -8,7 +8,7 @@ Founder
 
 <!-- active-projects:start -->
 - [Factory](https://github.com/arcitai/factory): I’m building Factory to give software work with agents a modular structure, from understanding the problem to reviewing and delivering the result.
-- [The Onlinesourdough Method](https://github.com/onlinesourdough/AIOS-plugin): I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.
+- [The Onlinesourdough Method](https://github.com/onlinesourdough/OSM-plugin): I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.
 - [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): I wanted an infinite, editable canvas inside my AI agent’s workspace, where we could work through architecture diagrams, systems and interface designs together without leaving the conversation.
 <!-- active-projects:end -->
 
@@ -36,7 +36,7 @@ Founder
 {
   "anchors": [
     "arcitai/factory",
-    "onlinesourdough/AIOS-plugin"
+    "onlinesourdough/OSM-plugin"
   ],
   "active": [
     "gustavonline/codex-claude-bridge",
@@ -52,7 +52,7 @@ Founder
       "readmeSection": "Why I built this",
       "icon": "/assets/project-marks/factory.svg"
     },
-    "onlinesourdough/AIOS-plugin": {
+    "onlinesourdough/OSM-plugin": {
       "category": "tools",
       "status": "Open source",
       "readmeSection": "Why I built this",
