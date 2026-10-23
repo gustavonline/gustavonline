@@ -6,7 +6,7 @@ owns project names, selection and the short summaries of projects without their
 own story. Its hidden `portfolio-config` comment defines anchors, the eligible
 active set, categories, statuses, optional icons and `readmeSection`.
 
-Factory, AIOS and OpenPaperDesign use `"readmeSection": "Why I built this"`.
+Factory, The Onlinesourdough Method and OpenPaperDesign use `"readmeSection": "Why I built this"`.
 Edit that section in each project's own root `README.md`. Write 1–4 short
 paragraphs. After the first paragraph, GitHub attribution links are supported:
 `[Michael Shimeles](https://github.com/michaelshimeles)`. Links may point to
@@ -24,7 +24,7 @@ the paragraphs. The updater checks public visibility before reading any project
 README and reads the same commit used for the repository metadata. The browser
 receives only the generated public JSON and has no GitHub credentials.
 
-Factory and AIOS are stable anchors. The third slot uses the most commits by
+Factory and The Onlinesourdough Method are stable anchors. The third slot uses the most commits by
 Gustav on the public default branch in 30 days, among explicitly selected tools.
 GitHub pins break activity ties, then README order. An incumbent remains until a
 challenger has at least five commits and 1.5 times its activity. Portfolio and
