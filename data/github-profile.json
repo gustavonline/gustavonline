@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-23T10:13:43.506Z",
+  "generatedAt": "2026-10-23T10:39:01.436Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "4071de1fd162d457626a7b801d057bf293973bff",
-  "readmeSha256": "4e6f0768f582b38ebe8979752e4714fdf61eeaa469cd285b93cdaf582b61b200",
+  "sourceRevision": "51f3c5ffb714afba722f9872f57456fc7365a883",
+  "readmeSha256": "5e15c32a14d4259d735322ca4a42ac990f5a9b58bfc741419086ec35c7880c93",
   "windowDays": 30,
   "projects": [
     {
@@ -34,23 +34,23 @@
     {
       "owner": "onlinesourdough",
       "repo": "onlinesourdough/AIOS-plugin",
-      "name": "AIOS",
+      "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/AIOS-plugin",
-      "description": "I built AIOS to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
-      "commits": 57,
+      "description": "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
+      "commits": 58,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/AIOS-plugin/blob/e9f4d2d81a512e4a2fb74c8313a19fab925a862b/README.md#why-i-built-this",
-        "revision": "e9f4d2d81a512e4a2fb74c8313a19fab925a862b",
-        "sha256": "10f01dbc2a2ea155a59cdcf56d7aa5c7136d167813d5c4cb1b49dd8d585d839b",
+        "url": "https://github.com/onlinesourdough/AIOS-plugin/blob/b3bb4d4121def564cb947596a9923876b7a66f67/README.md#why-i-built-this",
+        "revision": "b3bb4d4121def564cb947596a9923876b7a66f67",
+        "sha256": "70f290ed25723579828419f721e146edb98ba86bb8a369c2d5c68c94dde7c555",
         "paragraphs": [
-          "I built AIOS to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
-          "AIOS installs as a native plugin in Codex and Claude Code and adds reusable skills for planning, building, reviewing and writing. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
-          "Your context stays in a home you choose, such as Notion or a repository. The app provides the models, tools and permissions; AIOS helps the assistant find and maintain the context it needs."
+          "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
+          "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for planning, building, reviewing and writing. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
+          "Your context stays in a home you choose, such as Notion or a repository. The app provides the models, tools and permissions; the method helps the assistant find and maintain the context it needs."
         ]
       },
       "pinned": true,
@@ -181,7 +181,7 @@
   "contributions": {
     "from": "2025-10-24",
     "to": "2026-10-23",
-    "total": 43736,
+    "total": 43744,
     "weeks": [
       {
         "days": [
@@ -2580,7 +2580,7 @@
           {
             "date": "2026-10-23",
             "weekday": 5,
-            "count": 2,
+            "count": 10,
             "level": 1
           }
         ]
