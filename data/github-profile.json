@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-23T10:41:35.653Z",
+  "generatedAt": "2026-10-23T15:13:04.186Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "0c2ae3df7363b1d33534c3b4d81f13eca92b7955",
-  "readmeSha256": "5e15c32a14d4259d735322ca4a42ac990f5a9b58bfc741419086ec35c7880c93",
+  "sourceRevision": "48b5e22719414015b11fd3a60067c19d7efcb40c",
+  "readmeSha256": "74571d6d5f7588ce360e4db613799e5ec9aed190a3d03c644a574b2c33454066",
   "windowDays": 30,
   "projects": [
     {
@@ -33,20 +33,20 @@
     },
     {
       "owner": "onlinesourdough",
-      "repo": "onlinesourdough/AIOS-plugin",
+      "repo": "onlinesourdough/OSM-plugin",
       "name": "The Onlinesourdough Method",
-      "url": "https://github.com/onlinesourdough/AIOS-plugin",
+      "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
-      "commits": 58,
+      "commits": 63,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/AIOS-plugin/blob/b3bb4d4121def564cb947596a9923876b7a66f67/README.md#why-i-built-this",
-        "revision": "b3bb4d4121def564cb947596a9923876b7a66f67",
-        "sha256": "70f290ed25723579828419f721e146edb98ba86bb8a369c2d5c68c94dde7c555",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/314dcf17a06014df472a32cdb10f847672cba0be/README.md#why-i-built-this",
+        "revision": "314dcf17a06014df472a32cdb10f847672cba0be",
+        "sha256": "7703605de6e67f3f484d5897105cfc37d738bcc3a1ae669b3c82a40ad0f8b6f8",
         "paragraphs": [
           "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for planning, building, reviewing and writing. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
@@ -169,7 +169,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "My website, with current projects and ways to get in touch.",
-      "commits": 31,
+      "commits": 35,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -181,7 +181,7 @@
   "contributions": {
     "from": "2025-10-24",
     "to": "2026-10-23",
-    "total": 43746,
+    "total": 43784,
     "weeks": [
       {
         "days": [
@@ -2556,7 +2556,7 @@
           {
             "date": "2026-10-19",
             "weekday": 1,
-            "count": 27,
+            "count": 28,
             "level": 1
           },
           {
@@ -2568,19 +2568,19 @@
           {
             "date": "2026-10-21",
             "weekday": 3,
-            "count": 14,
+            "count": 15,
             "level": 1
           },
           {
             "date": "2026-10-22",
             "weekday": 4,
-            "count": 19,
+            "count": 20,
             "level": 1
           },
           {
             "date": "2026-10-23",
             "weekday": 5,
-            "count": 12,
+            "count": 47,
             "level": 1
           }
         ]
