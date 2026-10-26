@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-25T09:55:36.402Z",
+  "generatedAt": "2026-10-26T11:16:54.095Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "d39b76b579bb3b594cc628423a392554b2f16452",
+  "sourceRevision": "33c9bc47bacf0d4d6100896c57f04257d8b55caf",
   "readmeSha256": "74571d6d5f7588ce360e4db613799e5ec9aed190a3d03c644a574b2c33454066",
   "windowDays": 30,
   "projects": [
@@ -37,7 +37,7 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
-      "commits": 62,
+      "commits": 59,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -89,7 +89,7 @@
       "name": "Local AI for Omarchy",
       "url": "https://github.com/gustavonline/omarchy-llama-cpp-local-ai",
       "description": "My setup for running local models on Omarchy with llama.cpp and an optional local Copilot.",
-      "commits": 2,
+      "commits": 0,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -156,7 +156,7 @@
       "name": "YouTube content",
       "url": "https://github.com/gustavonline/youtube-content",
       "description": "Lessons, notes and useful files from my videos.",
-      "commits": 3,
+      "commits": 0,
       "isPublic": true,
       "category": "resources",
       "status": "Resources",
@@ -169,7 +169,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "My website, with current projects and ways to get in touch.",
-      "commits": 37,
+      "commits": 33,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -179,18 +179,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-10-26",
-    "to": "2026-10-25",
-    "total": 43780,
+    "from": "2025-10-27",
+    "to": "2026-10-26",
+    "total": 43797,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-10-26",
-            "weekday": 0,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-10-27",
             "weekday": 1,
@@ -2580,8 +2574,14 @@
           {
             "date": "2026-10-25",
             "weekday": 0,
-            "count": 0,
-            "level": 0
+            "count": 14,
+            "level": 1
+          },
+          {
+            "date": "2026-10-26",
+            "weekday": 1,
+            "count": 3,
+            "level": 1
           }
         ]
       }
