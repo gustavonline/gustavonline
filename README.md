@@ -1,8 +1,10 @@
 # Gustav Anderson
 
-Founder
+Founder working with data, AI and software. I help businesses bring their data and context together into a foundation AI can use.
 
 [gustavonline](https://gustavonline.com) · [YouTube](https://www.youtube.com/@gustavonline) · [LinkedIn](https://www.linkedin.com/in/gustavandersonn/)
+
+[Arc’IT AI](https://arcitai.com) for consultancy and projects. [onlinesourdough](https://onlinesourdough.com) for resources and ongoing 1:1 collaboration.
 
 ## Working on right now
 
