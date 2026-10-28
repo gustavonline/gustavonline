@@ -9,7 +9,7 @@ Founder working with data, AI and software. I help businesses bring their data a
 ## Working on right now
 
 <!-- active-projects:start -->
-- [Factory](https://github.com/arcitai/factory): I’m building Factory to give software work with agents a modular structure, from understanding the problem to reviewing and delivering the result.
+- [Factory](https://github.com/arcitai/factory): I’m building Factory as a portable method for using AI agents across software, BI, defence and research.
 - [The Onlinesourdough Method](https://github.com/onlinesourdough/OSM-plugin): I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.
 - [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): I wanted an infinite, editable canvas inside my AI agent’s workspace, where we could work through architecture diagrams, systems and interface designs together without leaving the conversation.
 <!-- active-projects:end -->
@@ -51,7 +51,6 @@ Founder working with data, AI and software. I help businesses bring their data a
     "arcitai/factory": {
       "category": "tools",
       "status": "Open source",
-      "readmeSection": "Why I built this",
       "icon": "/assets/project-marks/factory.svg"
     },
     "onlinesourdough/OSM-plugin": {

@@ -6,7 +6,7 @@ owns project names, selection and the short summaries of projects without their
 own story. Its hidden `portfolio-config` comment defines anchors, the eligible
 active set, categories, statuses, optional icons and `readmeSection`.
 
-Factory, The Onlinesourdough Method and OpenPaperDesign use `"readmeSection": "Why I built this"`.
+The Onlinesourdough Method and OpenPaperDesign use `"readmeSection": "Why I built this"`.
 Edit that section in each project's own root `README.md`. Write 1–4 short
 paragraphs. After the first paragraph, GitHub attribution links are supported:
 `[Michael Shimeles](https://github.com/michaelshimeles)`. Links may point to
@@ -18,6 +18,11 @@ become the website's project text. The section ends at the next H1/H2 or a
 horizontal rule. Duplicate, empty or unsupported sections fail the refresh and
 leave the previous files intact. Other projects continue to use their short
 profile-README summary. There is no second catalog or case copy on the website.
+
+Factory's current README no longer has a personal story section. Its short profile
+bullet therefore supplies the website text, using the existing no-story route.
+Do not require Factory to retain a portfolio-only heading or relax validation of
+the two configured story sources.
 
 Schema 3 records the source README URL, exact commit revision and SHA-256 alongside
 the paragraphs. The updater checks public visibility before reading any project
