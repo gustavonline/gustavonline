@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-26T11:16:54.095Z",
+  "generatedAt": "2026-10-28T09:43:53.037Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "33c9bc47bacf0d4d6100896c57f04257d8b55caf",
-  "readmeSha256": "74571d6d5f7588ce360e4db613799e5ec9aed190a3d03c644a574b2c33454066",
+  "sourceRevision": "afb9d0ca682f4d48549ea22878ac70f12d636be4",
+  "readmeSha256": "2ad5c39b4308ea5870f0c270a8702752226310a3b7ab6363f02b1f3f4d6e1c30",
   "windowDays": 30,
   "projects": [
     {
@@ -11,23 +11,12 @@
       "repo": "arcitai/factory",
       "name": "Factory",
       "url": "https://github.com/arcitai/factory",
-      "description": "I’m building Factory to give software work with agents a modular structure, from understanding the problem to reviewing and delivering the result.",
-      "commits": 37,
+      "description": "I’m building Factory as a portable method for using AI agents across software, BI, defence and research.",
+      "commits": 53,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/factory.svg",
-      "readme": {
-        "section": "Why I built this",
-        "url": "https://github.com/arcitai/factory/blob/2896c4710e44d86d305fdfa032b84a6feff3f2d1/README.md#why-i-built-this",
-        "revision": "2896c4710e44d86d305fdfa032b84a6feff3f2d1",
-        "sha256": "9bf1481a274e8d86d02e446572d8634c04a5826c6808f1e77154bd611e3a686e",
-        "paragraphs": [
-          "I’m building Factory to give software work with agents a modular structure, from understanding the problem to reviewing and delivering the result.",
-          "I build on established tools and standards: Codex, Claude Code and GitHub, with T3 Code as the workspace. Factory adds methods and reusable skills around them, keeping extra code and maintenance small.",
-          "Foundation prepares the project, AgentOps directs the work, and the Agentic Development Lifecycle (ADLC) covers specification, implementation, review and delivery. I’m developing a Power BI module that also covers the surrounding data and software work, and exploring modules for research and reverse engineering."
-        ]
-      },
       "pinned": true,
       "stars": 1
     },
@@ -169,7 +158,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "My website, with current projects and ways to get in touch.",
-      "commits": 33,
+      "commits": 36,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -179,24 +168,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-10-27",
-    "to": "2026-10-26",
-    "total": 43797,
+    "from": "2025-10-29",
+    "to": "2026-10-28",
+    "total": 43885,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-10-27",
-            "weekday": 1,
-            "count": 0,
-            "level": 0
-          },
-          {
-            "date": "2025-10-28",
-            "weekday": 2,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-10-29",
             "weekday": 3,
@@ -2546,19 +2523,19 @@
           {
             "date": "2026-10-21",
             "weekday": 3,
-            "count": 15,
+            "count": 16,
             "level": 1
           },
           {
             "date": "2026-10-22",
             "weekday": 4,
-            "count": 20,
+            "count": 21,
             "level": 1
           },
           {
             "date": "2026-10-23",
             "weekday": 5,
-            "count": 68,
+            "count": 72,
             "level": 1
           },
           {
@@ -2580,7 +2557,19 @@
           {
             "date": "2026-10-26",
             "weekday": 1,
-            "count": 3,
+            "count": 49,
+            "level": 1
+          },
+          {
+            "date": "2026-10-27",
+            "weekday": 2,
+            "count": 28,
+            "level": 1
+          },
+          {
+            "date": "2026-10-28",
+            "weekday": 3,
+            "count": 8,
             "level": 1
           }
         ]
