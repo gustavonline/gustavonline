@@ -11,7 +11,7 @@ Founder working with data, AI and software. I help businesses bring their data a
 <!-- active-projects:start -->
 - [Factory](https://github.com/arcitai/factory): I’m building Factory as a portable method for using AI agents across software, BI, defence and research.
 - [The Onlinesourdough Method](https://github.com/onlinesourdough/OSM-plugin): I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.
-- [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): I wanted an infinite, editable canvas inside my AI agent’s workspace, where we could work through architecture diagrams, systems and interface designs together without leaving the conversation.
+- [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): I wanted somewhere to sketch systems and design interfaces with an AI agent, without another paid design-tool subscription. Michael's paper-rs gave me a native, editable canvas to build on. I keep that foundation and add the integrations and methods I use in my own work.
 <!-- active-projects:end -->
 
 ## Useful repos
