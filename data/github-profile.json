@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-29T11:36:46.969Z",
+  "generatedAt": "2026-10-30T11:27:56.039Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "e27ef6e6effad3044e1d407ab065059e51c82242",
+  "sourceRevision": "fe997294a65505da4e2c85bc39478afb14452c1b",
   "readmeSha256": "1c0301f969978ddfd8df1572a8c2e8abf43a83a379645654274897cbb6f01c24",
   "windowDays": 30,
   "projects": [
@@ -12,7 +12,7 @@
       "name": "Factory",
       "url": "https://github.com/arcitai/factory",
       "description": "I’m building Factory as a portable method for using AI agents across software, BI, defence and research.",
-      "commits": 54,
+      "commits": 59,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -51,15 +51,15 @@
       "name": "OpenPaperDesign",
       "url": "https://github.com/arcitai/openpaperdesign",
       "description": "I wanted somewhere to sketch systems and design interfaces with an AI agent, without another paid design-tool subscription. Michael's paper-rs gave me a native, editable canvas to build on. I keep that foundation and add the integrations and methods I use in my own work.",
-      "commits": 99,
+      "commits": 101,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/openpaperdesign.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/arcitai/openpaperdesign/blob/7f586ab953a7a63e63e9b556e10f1a0cccad0e9b/README.md#why-i-built-this",
-        "revision": "7f586ab953a7a63e63e9b556e10f1a0cccad0e9b",
+        "url": "https://github.com/arcitai/openpaperdesign/blob/1ceebd4aff9cdefa07174a26cbf24b7d251a6b5f/README.md#why-i-built-this",
+        "revision": "1ceebd4aff9cdefa07174a26cbf24b7d251a6b5f",
         "sha256": "a41c75a9da786b6fe18d2af74fa667708ce38d9dfda739ddb134a55b16fe1fa0",
         "paragraphs": [
           "I wanted somewhere to sketch systems and design interfaces with an AI agent, without another paid design-tool subscription. Michael's paper-rs gave me a native, editable canvas to build on. I keep that foundation and add the integrations and methods I use in my own work."
@@ -156,7 +156,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "My website, with current projects and ways to get in touch.",
-      "commits": 36,
+      "commits": 33,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -166,18 +166,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-10-30",
-    "to": "2026-10-29",
-    "total": 43894,
+    "from": "2025-10-31",
+    "to": "2026-10-30",
+    "total": 43914,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-10-30",
-            "weekday": 4,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-10-31",
             "weekday": 5,
@@ -2567,8 +2561,14 @@
           {
             "date": "2026-10-29",
             "weekday": 4,
-            "count": 0,
-            "level": 0
+            "count": 12,
+            "level": 1
+          },
+          {
+            "date": "2026-10-30",
+            "weekday": 5,
+            "count": 8,
+            "level": 1
           }
         ]
       }
