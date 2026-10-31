@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-30T11:27:56.039Z",
+  "generatedAt": "2026-10-31T10:58:57.752Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "fe997294a65505da4e2c85bc39478afb14452c1b",
+  "sourceRevision": "73387864b76484cb1db7097e254f6ce3dbd0e957",
   "readmeSha256": "1c0301f969978ddfd8df1572a8c2e8abf43a83a379645654274897cbb6f01c24",
   "windowDays": 30,
   "projects": [
@@ -12,7 +12,7 @@
       "name": "Factory",
       "url": "https://github.com/arcitai/factory",
       "description": "I’m building Factory as a portable method for using AI agents across software, BI, defence and research.",
-      "commits": 59,
+      "commits": 61,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -26,7 +26,7 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
-      "commits": 59,
+      "commits": 56,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -135,7 +135,7 @@
       "status": "Community handoff",
       "icon": "/assets/project-marks/pi-desktop.svg",
       "pinned": true,
-      "stars": 154
+      "stars": 153
     },
     {
       "owner": "gustavonline",
@@ -156,7 +156,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "My website, with current projects and ways to get in touch.",
-      "commits": 33,
+      "commits": 27,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -166,18 +166,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-10-31",
-    "to": "2026-10-30",
-    "total": 43914,
+    "from": "2025-11-01",
+    "to": "2026-10-31",
+    "total": 43926,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-10-31",
-            "weekday": 5,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-11-01",
             "weekday": 6,
@@ -2567,7 +2561,13 @@
           {
             "date": "2026-10-30",
             "weekday": 5,
-            "count": 8,
+            "count": 16,
+            "level": 1
+          },
+          {
+            "date": "2026-10-31",
+            "weekday": 6,
+            "count": 4,
             "level": 1
           }
         ]
