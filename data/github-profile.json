@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-31T10:58:57.752Z",
+  "generatedAt": "2026-11-01T11:54:26.051Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "73387864b76484cb1db7097e254f6ce3dbd0e957",
+  "sourceRevision": "49ffdba2d2203c484f1d3fe69845e4924b554231",
   "readmeSha256": "1c0301f969978ddfd8df1572a8c2e8abf43a83a379645654274897cbb6f01c24",
   "windowDays": 30,
   "projects": [
@@ -26,7 +26,7 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
-      "commits": 56,
+      "commits": 52,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -103,7 +103,7 @@
       "name": "Local Pi worker",
       "url": "https://github.com/gustavonline/local-ai-pi-worker",
       "description": "A separate local Pi worker for delegating tasks through the command line or native RPC.",
-      "commits": 3,
+      "commits": 2,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -116,7 +116,7 @@
       "name": "Power BI for Factory",
       "url": "https://github.com/arcitai/Agentic-PowerBI-System",
       "description": "Power BI foundations, delivery methods and skills. I’m turning it into a module for Factory.",
-      "commits": 2,
+      "commits": 1,
       "isPublic": true,
       "category": "tools",
       "status": "In development",
@@ -156,7 +156,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "My website, with current projects and ways to get in touch.",
-      "commits": 27,
+      "commits": 24,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -166,20 +166,10 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-01",
-    "to": "2026-10-31",
-    "total": 43926,
+    "from": "2025-11-02",
+    "to": "2026-11-01",
+    "total": 43928,
     "weeks": [
-      {
-        "days": [
-          {
-            "date": "2025-11-01",
-            "weekday": 6,
-            "count": 0,
-            "level": 0
-          }
-        ]
-      },
       {
         "days": [
           {
@@ -2567,8 +2557,18 @@
           {
             "date": "2026-10-31",
             "weekday": 6,
-            "count": 4,
+            "count": 6,
             "level": 1
+          }
+        ]
+      },
+      {
+        "days": [
+          {
+            "date": "2026-11-01",
+            "weekday": 0,
+            "count": 0,
+            "level": 0
           }
         ]
       }
