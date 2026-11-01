@@ -1,3 +1,5 @@
+[<img src="assets/branding/gustavonline-lockup.svg" alt="gustavonline" width="360">](https://gustavonline.com)
+
 # Gustav Anderson
 
 Founder working with data, AI and software. I help businesses bring their data and context together into a foundation AI can use.
