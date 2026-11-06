@@ -21,7 +21,7 @@ Founder working with data, AI and software. I help businesses bring their data a
 <!-- useful-projects:start -->
 **Tools & experiments**
 
-- [Local AI for Omarchy](https://github.com/gustavonline/omarchy-llama-cpp-local-ai): My setup for running local models on Omarchy with llama.cpp and an optional local Copilot.
+- [Local AI inference for Omarchy](https://github.com/gustavonline/omarchy-ai-model-dock): Omarchy AI Model Dock prepares and serves local models with a native hotbar, a private endpoint and an agent CLI and skill.
 - [Codex Bridge](https://github.com/gustavonline/codex-claude-bridge): Use Codex as one workspace across models, conversations, files and tools. The first bridge connects Claude.
 - [Local Pi worker](https://github.com/gustavonline/local-ai-pi-worker): A separate local Pi worker for delegating tasks through the command line or native RPC.
 - [Agentic BI System](https://github.com/arcitai/Agentic-PowerBI-System): Power BI foundations, delivery methods and skills. I’m turning it into a module for Agentic Systems.
@@ -47,7 +47,7 @@ Founder working with data, AI and software. I help businesses bring their data a
     "arcitai/openpaperdesign",
     "arcitai/Agentic-PowerBI-System",
     "gustavonline/local-ai-pi-worker",
-    "gustavonline/omarchy-llama-cpp-local-ai"
+    "gustavonline/omarchy-ai-model-dock"
   ],
   "projects": {
     "arcitai/agentic-systems": {
@@ -81,7 +81,7 @@ Founder working with data, AI and software. I help businesses bring their data a
       "category": "tools",
       "status": "Open source"
     },
-    "gustavonline/omarchy-llama-cpp-local-ai": {
+    "gustavonline/omarchy-ai-model-dock": {
       "category": "tools",
       "status": "Open source"
     },
