@@ -1,11 +1,11 @@
 name: Update active projects
 on:
   schedule:
-    - cron: '23 5 * * *'
+    - cron: '23 */6 * * *'
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['README.md', 'scripts/**', '.github/workflows/update-profile.yml']
+    paths: ['README.md', 'data/projects.json', 'scripts/**', '.github/workflows/update-profile.yml']
 permissions:
   contents: write
 concurrency:

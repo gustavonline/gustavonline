@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "anchors": [
+    "arcitai/agentic-systems",
+    "onlinesourdough/OSM-plugin"
+  ],
+  "active": [
+    "gustavonline/codex-claude-bridge",
+    "gustavonline/openpaperdesign",
+    "arcitai/Agentic-PowerBI-System",
+    "gustavonline/local-ai-pi-worker",
+    "gustavonline/omarchy-ai-model-dock"
+  ],
+  "projects": {
+    "arcitai/agentic-systems": {
+      "category": "tools",
+      "status": "Open source",
+      "icon": "/assets/project-marks/agentic-systems.svg",
+      "nodeId": "R_kgDOU_grng"
+    },
+    "onlinesourdough/OSM-plugin": {
+      "category": "tools",
+      "status": "Open source",
+      "icon": "/assets/project-marks/aios.svg",
+      "nodeId": "R_kgDOUOqSpw",
+      "name": "The Onlinesourdough Method"
+    },
+    "gustavonline/codex-claude-bridge": {
+      "category": "tools",
+      "status": "Public preview",
+      "icon": "/assets/project-marks/codex-bridge.svg",
+      "nodeId": "R_kgDOVHm2GA",
+      "name": "Codex Bridge"
+    },
+    "gustavonline/openpaperdesign": {
+      "category": "tools",
+      "status": "Open source",
+      "icon": "/assets/project-marks/openpaperdesign.svg",
+      "nodeId": "R_kgDOVhuSog"
+    },
+    "arcitai/Agentic-PowerBI-System": {
+      "category": "tools",
+      "status": "In development",
+      "nodeId": "R_kgDOSOr_zA",
+      "name": "Agentic BI System"
+    },
+    "gustavonline/local-ai-pi-worker": {
+      "category": "tools",
+      "status": "Open source",
+      "nodeId": "R_kgDOUG51YA",
+      "name": "Local Pi worker"
+    },
+    "gustavonline/omarchy-ai-model-dock": {
+      "category": "tools",
+      "status": "Open source",
+      "nodeId": "R_kgDOT8u59Q",
+      "name": "Local AI inference for Omarchy"
+    },
+    "gustavonline/pi-desktop": {
+      "category": "community",
+      "status": "Community handoff",
+      "icon": "/assets/project-marks/pi-desktop.svg",
+      "nodeId": "R_kgDORQab_A",
+      "name": "Pi Desktop",
+      "summary": "A desktop app I built for the Pi coding agent. I’ve paused development; community maintainers are welcome."
+    },
+    "gustavonline/youtube-content": {
+      "category": "resources",
+      "status": "Resources",
+      "nodeId": "R_kgDOUrS9dw",
+      "name": "YouTube content"
+    },
+    "gustavonline/gustavonline-website": {
+      "category": "resources",
+      "status": "Open source",
+      "icon": "/assets/project-marks/portfolio.svg",
+      "nodeId": "R_kgDOS6PcDA",
+      "name": "Portfolio",
+      "textSource": "description"
+    }
+  }
+}

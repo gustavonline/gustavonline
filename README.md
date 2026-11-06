@@ -11,9 +11,9 @@ Founder working with data, AI and software. I help businesses bring their data a
 ## Working on right now
 
 <!-- active-projects:start -->
-- [Agentic Systems](https://github.com/arcitai/agentic-systems): I’m building an open-source framework that brings agents, context, tools and review together across software development, BI, defence and research.
+- [Agentic Systems](https://github.com/arcitai/agentic-systems): An open-source framework for building and operating agentic systems. Use it for software development, BI, defence, research and other work with AI agents. Start small, use existing tools, and add complexity when a real task needs it.
 - [The Onlinesourdough Method](https://github.com/onlinesourdough/OSM-plugin): I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.
-- [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): I wanted somewhere to sketch systems and design interfaces with an AI agent, without another paid design-tool subscription. Michael's paper-rs gave me a native, editable canvas to build on. I keep that foundation and add the integrations and methods I use in my own work.
+- [OpenPaperDesign](https://github.com/gustavonline/openpaperdesign): A canvas for designs, diagrams and working with your AI agent. Create layouts and graphics, map an architecture, inspect spacing and colours, leave comments, and export your work.
 <!-- active-projects:end -->
 
 ## Useful repos
@@ -21,10 +21,10 @@ Founder working with data, AI and software. I help businesses bring their data a
 <!-- useful-projects:start -->
 **Tools & experiments**
 
-- [Local AI inference for Omarchy](https://github.com/gustavonline/omarchy-ai-model-dock): Omarchy AI Model Dock prepares and serves local models with a native hotbar, a private endpoint and an agent CLI and skill.
-- [Codex Bridge](https://github.com/gustavonline/codex-claude-bridge): Use Codex as one workspace across models, conversations, files and tools. The first bridge connects Claude.
-- [Local Pi worker](https://github.com/gustavonline/local-ai-pi-worker): A separate local Pi worker for delegating tasks through the command line or native RPC.
-- [Agentic BI System](https://github.com/arcitai/Agentic-PowerBI-System): Power BI foundations, delivery methods and skills. I’m turning it into a module for Agentic Systems.
+- [Local AI inference for Omarchy](https://github.com/gustavonline/omarchy-ai-model-dock): Run local AI models on your Omarchy machine and use them from an agent, an app or another computer.
+- [Codex Bridge](https://github.com/gustavonline/codex-claude-bridge): Claude models in the Codex desktop app. By Gustav Online.
+- [Local Pi worker](https://github.com/gustavonline/local-ai-pi-worker): Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.
+- [Agentic BI System](https://github.com/arcitai/Agentic-PowerBI-System): Turn a business question into a Power BI model and report you can check and maintain. The system provides skills for defining measures, building the model, designing reports and validating the files, with records of each result.
 
 **Community**
 
@@ -32,73 +32,6 @@ Founder working with data, AI and software. I help businesses bring their data a
 
 **Resources**
 
-- [YouTube content](https://github.com/gustavonline/youtube-content): Lessons, notes and useful files from my videos.
-- [Portfolio](https://github.com/gustavonline/gustavonline-website): My website, with current projects and ways to get in touch.
+- [YouTube content](https://github.com/gustavonline/youtube-content): Notes, examples, and useful files to go with my YouTube videos.
+- [Portfolio](https://github.com/gustavonline/gustavonline-website): Portfolio — my personal website, current projects, open source work and real GitHub activity.
 <!-- useful-projects:end -->
-
-<!-- portfolio-config
-{
-  "anchors": [
-    "arcitai/agentic-systems",
-    "onlinesourdough/OSM-plugin"
-  ],
-  "active": [
-    "gustavonline/codex-claude-bridge",
-    "arcitai/openpaperdesign",
-    "arcitai/Agentic-PowerBI-System",
-    "gustavonline/local-ai-pi-worker",
-    "gustavonline/omarchy-ai-model-dock"
-  ],
-  "projects": {
-    "arcitai/agentic-systems": {
-      "category": "tools",
-      "status": "Open source",
-      "icon": "/assets/project-marks/agentic-systems.svg"
-    },
-    "onlinesourdough/OSM-plugin": {
-      "category": "tools",
-      "status": "Open source",
-      "readmeSection": "Why I built this",
-      "icon": "/assets/project-marks/aios.svg"
-    },
-    "gustavonline/codex-claude-bridge": {
-      "category": "tools",
-      "status": "Public preview",
-      "icon": "/assets/project-marks/codex-bridge.svg"
-    },
-    "arcitai/openpaperdesign": {
-      "category": "tools",
-      "status": "Open source",
-      "readmeSection": "Why I built this",
-      "allowFork": true,
-      "icon": "/assets/project-marks/openpaperdesign.svg"
-    },
-    "arcitai/Agentic-PowerBI-System": {
-      "category": "tools",
-      "status": "In development"
-    },
-    "gustavonline/local-ai-pi-worker": {
-      "category": "tools",
-      "status": "Open source"
-    },
-    "gustavonline/omarchy-ai-model-dock": {
-      "category": "tools",
-      "status": "Open source"
-    },
-    "gustavonline/pi-desktop": {
-      "category": "community",
-      "status": "Community handoff",
-      "icon": "/assets/project-marks/pi-desktop.svg"
-    },
-    "gustavonline/youtube-content": {
-      "category": "resources",
-      "status": "Resources"
-    },
-    "gustavonline/gustavonline-website": {
-      "category": "resources",
-      "status": "Open source",
-      "icon": "/assets/project-marks/portfolio.svg"
-    }
-  }
-}
--->

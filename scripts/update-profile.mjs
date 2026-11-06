@@ -17,37 +17,82 @@ export function replaceBlock(readme, name, body) {
   return readme.slice(0, start) + `${begin}\n${body}\n${end}` + readme.slice(finish + end.length);
 }
 
-/** The profile README owns names and selection; selected repositories own their story. */
-export function catalogFromReadme(readme) {
-  const configs = [...readme.matchAll(/<!-- portfolio-config\n([\s\S]*?)\n-->/g)];
-  if (configs.length !== 1) throw new Error('README needs one portfolio-config comment');
-  const config = JSON.parse(configs[0][1]);
-  if (!Array.isArray(config.anchors) || config.anchors.length !== 2 || !Array.isArray(config.active) || !config.projects) throw new Error('Invalid portfolio configuration');
-  const found = new Map();
-  const add = (repo, name, description) => {
-    const key = repo.toLowerCase();
-    if (!repoPattern.test(repo) || found.has(key)) throw new Error(`Invalid or duplicate catalog repository: ${repo}`);
-    found.set(key, { repo, owner: repo.split('/')[0], url: `https://github.com/${repo}`, name: plain(name), description: plain(description) });
-  };
-  for (const m of readme.matchAll(/^\| \[([^\]]+)\]\(https:\/\/github\.com\/([^ )]+)\) \| ([^|]+) \| \d+ \|$/gm)) add(m[2], m[1], m[3]);
-  for (const m of readme.matchAll(/^- \[([^\]]+)\]\(https:\/\/github\.com\/([^ )]+)\): (.+)$/gm)) add(m[2], m[1], m[3]);
-  const projects = Object.entries(config.projects).map(([repo, meta]) => {
-    const project = found.get(repo.toLowerCase());
-    if (!repoPattern.test(repo) || !project || !categories[meta.category] || !project.description || !project.name) throw new Error(`Missing/invalid README project: ${repo}`);
+const statuses = ['Community maintained', 'Community handoff', 'Resources', 'In development', 'Open source', 'Public preview'];
+
+/** Selection is independent of the generated README, including omitted projects. */
+export function validateCatalog(config) {
+  if (config?.schemaVersion !== 1 || !Array.isArray(config.anchors) || config.anchors.length !== 2 || !Array.isArray(config.active) || !config.projects || Array.isArray(config.projects)) throw new Error('Invalid project catalog');
+  const entries = Object.entries(config.projects);
+  if (!entries.length || entries.length > 50) throw new Error('Expected 1–50 selected repositories');
+  const ids = new Set();
+  for (const [repo, meta] of entries) {
+    if (!repoPattern.test(repo) || !meta || !categories[meta.category] || !statuses.includes(meta.status)) throw new Error(`Invalid selected project: ${repo}`);
+    if (meta.allowFork !== undefined && typeof meta.allowFork !== 'boolean') throw new Error(`Invalid fork selection: ${repo}`);
+    if (typeof meta.nodeId !== 'string' || !/^[A-Za-z0-9_+/=-]{8,200}$/.test(meta.nodeId) || ids.has(meta.nodeId)) throw new Error(`Invalid or duplicate repository ID: ${repo}`);
+    ids.add(meta.nodeId);
     if (meta.icon && (!/^\/assets\/[A-Za-z0-9/_.-]+\.svg$/.test(meta.icon) || meta.icon.includes('..'))) throw new Error('Invalid local project icon');
-    if (meta.readmeSection !== undefined && meta.readmeSection !== 'Why I built this') throw new Error(`Unsupported README section: ${repo}`);
-    return { ...project, ...meta, repo, owner: repo.split('/')[0], url: `https://github.com/${repo}` };
+    if (meta.textSource !== undefined && meta.textSource !== 'description') throw new Error(`Invalid text source: ${repo}`);
+    for (const [key, limit] of [['name', 80], ['summary', 300]]) {
+      if (meta[key] !== undefined && (typeof meta[key] !== 'string' || !meta[key].trim() || meta[key].length > limit || plain(meta[key]) !== meta[key])) throw new Error(`Invalid ${key} override: ${repo}`);
+    }
+  }
+  const focus = [...config.anchors, ...config.active];
+  if (new Set(focus).size !== focus.length || focus.some(repo => !config.projects[repo] || config.projects[repo].category !== 'tools')) throw new Error('Focus must use distinct selected tools');
+  return config;
+}
+
+/** A node ID follows the chosen repository; names and owners are current API data. */
+export function resolveProjects(config, nodes) {
+  validateCatalog(config);
+  const entries = Object.entries(config.projects);
+  if (!Array.isArray(nodes) || nodes.length !== entries.length) throw new Error('Incomplete repository lookup; keeping previous files');
+  const projects = [], seen = new Set(), omitted = [];
+  entries.forEach(([catalogRepo, settings], index) => {
+    const repo = nodes[index];
+    if (!repo || repo.id !== settings.nodeId || typeof repo.isPrivate !== 'boolean' || typeof repo.isArchived !== 'boolean' || typeof repo.isFork !== 'boolean') throw new Error(`Repository lookup unavailable: ${catalogRepo}; keeping previous files`);
+    if (repo.isPrivate || repo.isArchived || (repo.isFork && !settings.allowFork)) {
+      omitted.push(catalogRepo);
+      return;
+    }
+    if (!repoPattern.test(repo.nameWithOwner) || seen.has(repo.nameWithOwner.toLowerCase())) throw new Error(`Repository left the selected owners or duplicated another project: ${catalogRepo}`);
+    seen.add(repo.nameWithOwner.toLowerCase());
+    const commits = repo.defaultBranchRef?.target?.history?.totalCount;
+    const revision = repo.defaultBranchRef?.target?.oid;
+    if (!validCount(commits) || !validCount(repo.stargazerCount) || !/^[a-f0-9]{40}$/.test(revision ?? '')) throw new Error(`Incomplete repository activity: ${catalogRepo}`);
+    projects.push({ ...settings, catalogRepo, repo: repo.nameWithOwner, owner: repo.nameWithOwner.split('/')[0], url: `https://github.com/${repo.nameWithOwner}`, githubDescription: repo.description, commits, revision, isPublic: true, archived: false, fork: repo.isFork, stars: repo.stargazerCount });
   });
-  const unique = [...config.anchors, ...config.active];
-  if (new Set(unique).size !== unique.length || unique.some((repo) => !config.projects[repo] || config.projects[repo].category !== 'tools')) throw new Error('Focus must use distinct curated tools');
-  return { config, projects };
+  return { projects, omitted };
+}
+
+/** Reduce simple inline Markdown to text without copying links or HTML into a summary. */
+function inlineText(value) {
+  const text = value.replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\(https?:\/\/[^\s)]+\)/g, '$1').replace(/`([^`]+)`/g, '$1').replace(/\*\*([^*]+)\*\*/g, '$1').replace(/__([^_]+)__/g, '$1').replace(/\*([^*]+)\*/g, '$1').trim();
+  return /[<>\[\]`*\\]/.test(text) ? null : plain(text);
+}
+
+export function readmeIntro(readme) {
+  if (readme === null) return { title: null, description: null };
+  if (typeof readme !== 'string' || readme.length > 250000) throw new Error('Project README is missing or too large');
+  const lines = readme.replace(/\r\n?/g, '\n').replace(/<!--[\s\S]*?-->/g, '').replace(/^ {0,3}(`{3,}|~{3,})[^\n]*\n[\s\S]*?^ {0,3}\1\s*$/gm, '').split('\n');
+  const heading = lines.findIndex(line => /^# +\S/.test(line));
+  if (heading < 0) return { title: null, description: null };
+  const title = inlineText(lines[heading].replace(/^# +/, '').replace(/ +#+\s*$/, ''));
+  const end = lines.findIndex((line, index) => index > heading && /^#{1,6}\s|^\s*(?:-{3,}|\*{3,}|_{3,})\s*$/.test(line));
+  const blocks = lines.slice(heading + 1, end < 0 ? undefined : end).join('\n').split(/\n\s*\n/);
+  for (const block of blocks) {
+    if (!block.trim() || /[<>]|^\s*(?:[-+*]\s|\d+[.)]\s|\||!\[|\[!\[)/m.test(block)) continue;
+    const text = inlineText(block.replace(/\s+/g, ' ').trim());
+    if (text && /^(?:(?:revision|version|updated|last updated|license|status|author)\s*:|maintained by\b)/i.test(text)) continue;
+    if (text) return { title, description: text.length <= 300 ? text : null };
+  }
+  return { title, description: null };
 }
 
 // This small authoring format supports GitHub attribution links, not general Markdown.
 const githubAttribution = /(?<!!)\[([^\[\]\r\n]+)\]\((https:\/\/github\.com\/[A-Za-z0-9-]+(?:\/[A-Za-z0-9_.-]+)?\/?)\)/g;
 
 /** Extract short paragraphs and optional GitHub credit links, never the installation guide. */
-export function readmeParagraphs(readme, section = 'Why I built this') {
+export function readmeParagraphs(readme, section = 'Why I built this', required = true) {
   if (typeof readme !== 'string' || readme.length > 250000) throw new Error('Project README is missing or too large');
   const lines = readme.replace(/\r\n?/g, '\n').replace(/<!--[\s\S]*?-->/g, '').split('\n');
   const sections = [];
@@ -69,6 +114,7 @@ export function readmeParagraphs(readme, section = 'Why I built this') {
     } else if (/^#{1,2}\s|^\s*(?:-{3,}|\*{3,}|_{3,})\s*$/.test(line)) current = null;
     else if (current) current.push(line);
   }
+  if (!sections.length && !required) return null;
   if (sections.length !== 1) throw new Error(`Project README needs exactly one "## ${section}" section`);
   const sectionText = sections[0].join('\n');
   const body = sectionText.trim();
@@ -82,32 +128,32 @@ export function readmeParagraphs(readme, section = 'Why I built this') {
   return paragraphs;
 }
 
-/** One source for the profile summary and the website story; any source error aborts refresh. */
+/** Project READMEs own current text; the catalog can keep an explicit short override. */
 export async function loadProjectReadmes(projects, readSource) {
   return Promise.all(projects.map(async (project) => {
-    if (!project.readmeSection) return project;
     if (!project.isPublic) throw new Error(`Refusing private README: ${project.repo}`);
-    const source = await readSource(project);
-    const paragraphs = readmeParagraphs(source.text, project.readmeSection);
-    return { ...project, description: paragraphs[0], readme: {
-      section: project.readmeSection,
-      url: source.url,
-      revision: source.revision,
-      sha256: createHash('sha256').update(source.text).digest('hex'),
-      paragraphs,
-    } };
+    const source = project.name && (project.summary || project.textSource === 'description') ? { text: null } : await readSource(project);
+    const intro = readmeIntro(source.text);
+    const paragraphs = !project.summary && project.textSource !== 'description' && typeof source.text === 'string' ? readmeParagraphs(source.text, 'Why I built this', false) : null;
+    const description = project.summary ?? (project.textSource === 'description' ? inlineText(project.githubDescription ?? '') : paragraphs?.[0] ?? intro.description ?? inlineText(project.githubDescription ?? ''));
+    const name = project.name ?? intro.title ?? project.repo.split('/')[1];
+    if (!description || description.length > 300 || !name || name.length > 80) throw new Error(`No usable project title/summary: ${project.repo}. Edit its README/description or add a catalog override.`);
+    return { ...project, name, description, ...(paragraphs && !project.summary ? { readme: {
+      section: 'Why I built this', url: source.url + '#why-i-built-this', revision: source.revision,
+      sha256: createHash('sha256').update(source.text).digest('hex'), paragraphs,
+    } } : {}) };
   }));
 }
 
 /** Two editorial anchors, then activity among explicitly eligible tools. */
 export function chooseFocus(projects, config, previous = []) {
   const eligible = projects.filter((p) => p.isPublic && !p.archived && (!p.fork || p.allowFork));
-  const byRepo = new Map(eligible.map((p) => [p.repo, p]));
+  const byRepo = new Map(eligible.flatMap((p) => [[p.repo, p], [p.catalogRepo ?? p.repo, p]]));
   const anchors = config.anchors.map((repo) => byRepo.get(repo)).filter(Boolean);
   const active = config.active.map((repo) => byRepo.get(repo)).filter(Boolean);
-  active.sort((a, b) => b.commits - a.commits || Number(b.pinned) - Number(a.pinned) || config.active.indexOf(a.repo) - config.active.indexOf(b.repo));
+  active.sort((a, b) => b.commits - a.commits || Number(b.pinned) - Number(a.pinned) || config.active.indexOf(a.catalogRepo ?? a.repo) - config.active.indexOf(b.catalogRepo ?? b.repo));
   let winner = active[0];
-  const incumbent = active.find((p) => previous.some((old) => old.repo === p.repo));
+  const incumbent = active.find((p) => previous.some((old) => old.repo === p.repo || old.repo === p.catalogRepo));
   if (incumbent && winner && winner.repo !== incumbent.repo && (winner.commits < 5 || winner.commits < incumbent.commits * 1.5)) winner = incumbent;
   const focus = [...anchors, ...(winner ? [winner] : [])];
   for (const project of active) if (focus.length < 3 && !focus.some((p) => p.repo === project.repo)) focus.push(project);
@@ -150,14 +196,27 @@ async function queryGitHub(query, variables) {
   return payload.data;
 }
 
+export async function buildProfile({ original, config, nodes, pins, previous, readSource, calendar, now, sourceRevision }) {
+  const resolved = resolveProjects(config, nodes);
+  const catalog = Object.keys(config.projects);
+  const projects = await loadProjectReadmes(resolved.projects.map(p => ({ ...p, pinned: pins.has(p.repo.toLowerCase()) })), readSource);
+  const focus = chooseFocus(projects, config, previous);
+  const more = projects.filter(p => !focus.some(f => f.repo === p.repo)).sort((a, b) => Object.keys(categories).indexOf(a.category) - Object.keys(categories).indexOf(b.category) || Number(b.pinned) - Number(a.pinned) || b.commits - a.commits || catalog.indexOf(a.catalogRepo) - catalog.indexOf(b.catalogRepo));
+  const readme = renderProfile(original, focus, more);
+  const projectOutput = p => ({ owner: p.owner, repo: p.repo, name: p.name, url: p.url, description: p.description, commits: p.commits, isPublic: true, category: p.category, status: p.status, ...(p.icon ? { icon: p.icon } : {}), ...(p.readme ? { readme: p.readme } : {}), pinned: p.pinned, stars: p.stars });
+  const projection = { schemaVersion: 3, generatedAt: now.toISOString(), sourceReadme: 'https://github.com/gustavonline/gustavonline/blob/main/README.md', sourceRevision, readmeSha256: createHash('sha256').update(readme).digest('hex'), windowDays: 30,
+    projects: focus.map(projectOutput), moreProjects: more.map(projectOutput), contributions: calendarProjection(calendar) };
+  return { readme, projection, omitted: resolved.omitted };
+}
+
 export async function main(readmeOverrides = {}) {
   const root = fileURLToPath(new URL('../', import.meta.url));
   const readmePath = path.join(root, 'README.md');
   const original = await readFile(readmePath, 'utf8');
-  const { config, projects: catalog } = catalogFromReadme(original);
+  const config = validateCatalog(JSON.parse(await readFile(path.join(root, 'data/projects.json'), 'utf8')));
   if (process.env.GITHUB_ACTIONS === 'true' && Object.keys(readmeOverrides).length) throw new Error('Local README overrides are not allowed in GitHub Actions');
   for (const [repo, file] of Object.entries(readmeOverrides)) {
-    if (!catalog.some((p) => p.repo === repo && p.readmeSection) || typeof file !== 'string' || !path.isAbsolute(file)) throw new Error(`Invalid local README override: ${repo}`);
+    if (!config.projects[repo] || typeof file !== 'string' || !path.isAbsolute(file)) throw new Error(`Invalid local README override: ${repo}`);
   }
   const now = new Date();
   const from = new Date(now.getTime() - 30 * 86400000).toISOString();
@@ -167,50 +226,38 @@ export async function main(readmeOverrides = {}) {
     contributionsCollection(from:$calendarFrom,to:$to){contributionCalendar{totalContributions weeks{contributionDays{date weekday contributionCount contributionLevel}}}}
   }}`, { to: now.toISOString(), calendarFrom });
   if (!user) throw new Error('GitHub profile unavailable');
-  const pins = new Set(user.pinnedItems.nodes.map((p) => p.nameWithOwner.toLowerCase()));
-  const queries = catalog.map((p, index) => {
-    const [owner, name] = p.repo.split('/');
-    return `r${index}:repository(owner:${JSON.stringify(owner)},name:${JSON.stringify(name)}){isPrivate isArchived isFork stargazerCount defaultBranchRef{target{... on Commit{oid history(first:1,since:$from,until:$to,author:{id:$author}){totalCount}}}}}`;
-  });
-  const data = await queryGitHub(`query($from:GitTimestamp!,$to:GitTimestamp!,$author:ID!){${queries.join('\n')}}`, { from, to: now.toISOString(), author: user.id });
-  const publicProjects = catalog.flatMap((p, index) => {
-    const repo = data[`r${index}`];
-    if (!repo) throw new Error(`Repository unavailable: ${p.repo}`);
-    if (repo.isPrivate || repo.isArchived || (repo.isFork && !p.allowFork)) return [];
-    const commits = repo.defaultBranchRef?.target?.history?.totalCount;
-    if (!validCount(commits) || !validCount(repo.stargazerCount)) throw new Error(`Incomplete repository activity: ${p.repo}`);
-    return [{ ...p, commits, isPublic: true, archived: repo.isArchived, fork: repo.isFork, stars: repo.stargazerCount, pinned: pins.has(p.repo.toLowerCase()), revision: repo.defaultBranchRef.target.oid }];
-  });
-  const projects = await loadProjectReadmes(publicProjects, async (project) => {
-    const localFile = readmeOverrides[project.repo];
-    const revision = localFile ? 'local-preview' : project.revision;
-    const ref = localFile ? 'main' : revision;
-    const url = `https://github.com/${project.repo}/blob/${ref}/README.md#why-i-built-this`;
-    if (localFile) return { text: await readFile(localFile, 'utf8'), revision, url };
-    const [owner, name] = project.repo.split('/');
-    const { repository } = await queryGitHub(`query($owner:String!,$name:String!,$expression:String!){repository(owner:$owner,name:$name){isPrivate object(expression:$expression){... on Blob{text}}}}`, { owner, name, expression: `${revision}:README.md` });
-    if (!repository || repository.isPrivate || !repository.object?.text) throw new Error(`Public README unavailable: ${project.repo}; no files changed`);
-    return { text: repository.object.text, revision, url };
+  const pins = new Set(user.pinnedItems.nodes.map(p => p.nameWithOwner.toLowerCase()));
+  const { nodes } = await queryGitHub(`query($ids:[ID!]!,$from:GitTimestamp!,$to:GitTimestamp!,$author:ID!){nodes(ids:$ids){... on Repository{
+    id nameWithOwner isPrivate isArchived isFork description stargazerCount defaultBranchRef{target{... on Commit{oid history(first:1,since:$from,until:$to,author:{id:$author}){totalCount}}}}
+  }}}`, { ids: Object.values(config.projects).map(p => p.nodeId), from, to: now.toISOString(), author: user.id });
+  // Validate visibility before requesting any README, then pin each read to that commit.
+  const publicProjects = resolveProjects(config, nodes).projects;
+  const sourceProjects = publicProjects.filter(p => !readmeOverrides[p.catalogRepo] && (!p.name || (!p.summary && p.textSource !== 'description')));
+  const queries = sourceProjects.map((p, index) => `r${index}:node(id:${JSON.stringify(p.nodeId)}){... on Repository{isPrivate object(expression:${JSON.stringify(p.revision + ':README.md')}){... on Blob{text}}}}`);
+  const sources = queries.length ? await queryGitHub(`query{${queries.join('\n')}}`, {}) : {};
+  const published = new Map();
+  sourceProjects.forEach((p, index) => {
+    const source = sources[`r${index}`];
+    if (!source || source.isPrivate) throw new Error(`Public README unavailable: ${p.catalogRepo}; keeping previous files`);
+    published.set(p.catalogRepo, source.object?.text ?? null);
   });
   let previous = [];
   try { previous = JSON.parse(await readFile(path.join(root, 'data/github-profile.json'), 'utf8')).projects ?? []; }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
-  const focus = chooseFocus(projects, config, previous);
-  const more = projects.filter((p) => !focus.some((f) => f.repo === p.repo)).sort((a, b) => Object.keys(categories).indexOf(a.category) - Object.keys(categories).indexOf(b.category) || Number(b.pinned) - Number(a.pinned) || b.commits - a.commits || catalog.findIndex((p) => p.repo === a.repo) - catalog.findIndex((p) => p.repo === b.repo));
-  const readme = renderProfile(original, focus, more);
-  const renderedCatalog = catalogFromReadme(readme).projects;
-  const projectOutput = (p) => {
-    const visible = renderedCatalog.find((item) => item.repo === p.repo);
-    return { owner: p.owner, repo: p.repo, name: visible.name, url: p.url, description: visible.description, commits: p.commits, isPublic: true, category: p.category, status: p.status, ...(p.icon ? { icon: p.icon } : {}), ...(p.readme ? { readme: p.readme } : {}), pinned: p.pinned, stars: p.stars };
-  };
   const sourceRevision = Object.keys(readmeOverrides).length ? 'local-preview' : (process.env.GITHUB_SHA || execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim());
-  const projection = { schemaVersion: 3, generatedAt: now.toISOString(), sourceReadme: 'https://github.com/gustavonline/gustavonline/blob/main/README.md', sourceRevision, readmeSha256: createHash('sha256').update(readme).digest('hex'), windowDays: 30,
-    projects: focus.map(projectOutput), moreProjects: more.map(projectOutput), contributions: calendarProjection(user.contributionsCollection.contributionCalendar) };
+  const result = await buildProfile({ original, config, nodes, pins, previous, calendar: user.contributionsCollection.contributionCalendar, now, sourceRevision,
+    readSource: async project => {
+      const localFile = readmeOverrides[project.catalogRepo];
+      const revision = localFile ? 'local-preview' : project.revision;
+      return { text: localFile ? await readFile(localFile, 'utf8') : published.get(project.catalogRepo), revision,
+        url: `https://github.com/${project.repo}/blob/${localFile ? 'main' : revision}/README.md` };
+    } });
   await mkdir(path.join(root, 'data'), { recursive: true });
-  await writeFile(readmePath, readme);
-  await writeFile(path.join(root, 'data/github-profile.json'), JSON.stringify(projection, null, 2) + '\n');
-  console.log(focus.map((p) => `${p.repo}: ${p.commits} commits`).join('\n'));
-  console.log(`${more.length} supporting projects; ${projection.contributions.total} contributions across ${projection.contributions.weeks.length} weeks`);
+  await writeFile(readmePath, result.readme);
+  await writeFile(path.join(root, 'data/github-profile.json'), JSON.stringify(result.projection, null, 2) + '\n');
+  console.log(result.projection.projects.map(p => `${p.repo}: ${p.commits} commits`).join('\n'));
+  console.log(`${result.projection.moreProjects.length} supporting projects; ${result.projection.contributions.total} contributions across ${result.projection.contributions.weeks.length} weeks`);
+  if (result.omitted.length) console.log(`Omitted ${result.omitted.length} archived, private or unapproved-fork selections; catalog retained.`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
@@ -221,5 +268,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     if (!overrides || Array.isArray(overrides) || typeof overrides !== 'object') throw new Error('README overrides must map repository names to absolute paths');
     await main(overrides);
   };
-  run().catch((error) => { console.error(error.message); process.exitCode = 1; });
+  run().catch(error => { console.error(error.message); process.exitCode = 1; });
 }
