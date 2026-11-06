@@ -13,7 +13,7 @@ Founder working with data, AI and software. I help businesses bring their data a
 <!-- active-projects:start -->
 - [Agentic Systems](https://github.com/arcitai/agentic-systems): An open-source framework for building and operating agentic systems. Use it for software development, BI, defence, research and other work with AI agents. Start small, use existing tools, and add complexity when a real task needs it.
 - [The Onlinesourdough Method](https://github.com/onlinesourdough/OSM-plugin): I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.
-- [OpenPaperDesign](https://github.com/gustavonline/openpaperdesign): A canvas for designs, diagrams and working with your AI agent. Create layouts and graphics, map an architecture, inspect spacing and colours, leave comments, and export your work.
+- [OpenPaperDesign](https://github.com/gustavonline/openpaperdesign): Canvas for your agent. Create layouts and graphics, map an architecture, inspect spacing and colours, leave comments, and export your work.
 <!-- active-projects:end -->
 
 ## Useful repos
