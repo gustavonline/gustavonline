@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-05T13:19:15.637Z",
+  "generatedAt": "2026-11-06T11:30:24.221Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "4aff0ad8af55f604fdedcb566fafb2298299151c",
-  "readmeSha256": "72870131537772e191f0d96acb97ee36057ea20523bfb27adac9ef4a1ea8e318",
+  "sourceRevision": "9825c5c31623dd6ec3f43d275260506f11c6535e",
+  "readmeSha256": "51ee0f241bfddc75b4ce02073e11f653ad7043acf8c53b9ea76cfa67bf0ffbc9",
   "windowDays": 30,
   "projects": [
     {
@@ -11,14 +11,14 @@
       "repo": "arcitai/agentic-systems",
       "name": "Agentic Systems",
       "url": "https://github.com/arcitai/agentic-systems",
-      "description": "I’m building Agentic Systems as a portable method for using AI agents across software, BI, defence and research.",
-      "commits": 64,
+      "description": "I’m building an open-source framework that brings agents, context, tools and review together across software development, BI, defence and research.",
+      "commits": 65,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/agentic-systems.svg",
       "pinned": true,
-      "stars": 1
+      "stars": 0
     },
     {
       "owner": "onlinesourdough",
@@ -43,7 +43,7 @@
         ]
       },
       "pinned": true,
-      "stars": 1
+      "stars": 0
     },
     {
       "owner": "arcitai",
@@ -76,7 +76,7 @@
       "name": "Local AI for Omarchy",
       "url": "https://github.com/gustavonline/omarchy-llama-cpp-local-ai",
       "description": "My setup for running local models on Omarchy with llama.cpp and an optional local Copilot.",
-      "commits": 0,
+      "commits": 2,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -166,18 +166,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-06",
-    "to": "2026-11-05",
-    "total": 44040,
+    "from": "2025-11-07",
+    "to": "2026-11-06",
+    "total": 44064,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-11-06",
-            "weekday": 4,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-11-07",
             "weekday": 5,
@@ -2567,7 +2561,13 @@
           {
             "date": "2026-11-05",
             "weekday": 4,
-            "count": 18,
+            "count": 26,
+            "level": 1
+          },
+          {
+            "date": "2026-11-06",
+            "weekday": 5,
+            "count": 16,
             "level": 1
           }
         ]
