@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-06T11:30:24.221Z",
+  "generatedAt": "2026-11-06T12:01:46.997697Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "9825c5c31623dd6ec3f43d275260506f11c6535e",
-  "readmeSha256": "51ee0f241bfddc75b4ce02073e11f653ad7043acf8c53b9ea76cfa67bf0ffbc9",
+  "sourceRevision": "1227a244187690113a9c7969a288e8aeda58f93d",
+  "readmeSha256": "b0805a64d5c8c6c2a551ea286c1a7ae01d161150cb62a8ee6396c58e79faa527",
   "windowDays": 30,
   "projects": [
     {
@@ -72,10 +72,10 @@
   "moreProjects": [
     {
       "owner": "gustavonline",
-      "repo": "gustavonline/omarchy-llama-cpp-local-ai",
-      "name": "Local AI for Omarchy",
-      "url": "https://github.com/gustavonline/omarchy-llama-cpp-local-ai",
-      "description": "My setup for running local models on Omarchy with llama.cpp and an optional local Copilot.",
+      "repo": "gustavonline/omarchy-ai-model-dock",
+      "name": "Local AI inference for Omarchy",
+      "url": "https://github.com/gustavonline/omarchy-ai-model-dock",
+      "description": "Omarchy AI Model Dock prepares and serves local models with a native hotbar, a private endpoint and an agent CLI and skill.",
       "commits": 2,
       "isPublic": true,
       "category": "tools",
