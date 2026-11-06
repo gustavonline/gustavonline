@@ -53,7 +53,7 @@ Founder working with data, AI and software. I help businesses bring their data a
     "arcitai/agentic-systems": {
       "category": "tools",
       "status": "Open source",
-      "icon": "/assets/project-marks/agentic system.svg"
+      "icon": "/assets/project-marks/agentic-systems.svg"
     },
     "onlinesourdough/OSM-plugin": {
       "category": "tools",
