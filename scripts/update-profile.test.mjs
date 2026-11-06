@@ -4,12 +4,12 @@ import { catalogFromReadme, chooseFocus, renderProfile, replaceBlock, calendarPr
 
 // Synthetic repositories/counts exercise editorial policy, not production activity.
 const make = (repo, commits, options = {}) => ({ repo, owner: repo.split('/')[0], url: `https://github.com/${repo}`, name: repo.split('/')[1], description: 'A useful project.', category: 'tools', status: 'Open source', commits, isPublic: true, pinned: false, ...options });
-const fixture = [make('arcitai/factory', 0), make('onlinesourdough/OSM-plugin', 1), make('gustavonline/bridge', 10), make('arcitai/canvas', 12, { fork: true, allowFork: true }), make('gustavonline/portfolio', 1000, { category: 'resources' }), make('gustavonline/community', 999, { category: 'community', stars: 10000 })];
+const fixture = [make('arcitai/agentic-systems', 0), make('onlinesourdough/OSM-plugin', 1), make('gustavonline/bridge', 10), make('arcitai/canvas', 12, { fork: true, allowFork: true }), make('gustavonline/portfolio', 1000, { category: 'resources' }), make('gustavonline/community', 999, { category: 'community', stars: 10000 })];
 const config = { anchors: fixture.slice(0, 2).map((p) => p.repo), active: fixture.slice(2, 4).map((p) => p.repo), projects: Object.fromEntries(fixture.map((p) => [p.repo, { category: p.category, status: p.status, ...(p.allowFork ? { allowFork: true } : {}) }])) };
 const template = () => 'Owner-edited introduction.\n\n## Working on right now\n\n<!-- active-projects:start -->\n<!-- active-projects:end -->\n\n## Useful repos\n<!-- useful-projects:start -->\n' + fixture.map((p) => `- [${p.name}](${p.url}): ${p.description}`).join('\n') + '\n<!-- useful-projects:end -->\n\n**Open-source organisations**\n[Arc’IT AI](https://github.com/arcitai)\n\n<!-- portfolio-config\n' + JSON.stringify(config) + '\n-->\n';
 
 test('curated focus resists landingpage bursts, stars and community work; allows two projects from one owner', () => {
-  assert.deepEqual(chooseFocus(fixture, config).map((p) => p.repo), ['arcitai/factory', 'onlinesourdough/OSM-plugin', 'arcitai/canvas']);
+  assert.deepEqual(chooseFocus(fixture, config).map((p) => p.repo), ['arcitai/agentic-systems', 'onlinesourdough/OSM-plugin', 'arcitai/canvas']);
 });
 test('a small burst cannot replace the incumbent; a clear activity lead can', () => {
   assert.equal(chooseFocus(fixture, config, [fixture[2]])[2].repo, 'gustavonline/bridge');
@@ -47,14 +47,14 @@ test('profile refresh keeps focus as editable bullets without commit tables or s
   assert.equal(block.trim().split('\n').length, 3);
   assert.ok(block.trim().split('\n').every((line) => line.startsWith('- [')));
   assert.doesNotMatch(block, /\||commits|30 days|Updated|stay in focus|follows activity/i);
-  const edited = rendered.replace('[factory](https://github.com/arcitai/factory): A useful project.', '[Factory](https://github.com/arcitai/factory): My modular software toolkit.');
-  assert.equal(catalogFromReadme(edited).projects.find((p) => p.repo === 'arcitai/factory').description, 'My modular software toolkit.');
+  const edited = rendered.replace('[agentic-systems](https://github.com/arcitai/agentic-systems): A useful project.', '[Agentic Systems](https://github.com/arcitai/agentic-systems): My modular software toolkit.');
+  assert.equal(catalogFromReadme(edited).projects.find((p) => p.repo === 'arcitai/agentic-systems').description, 'My modular software toolkit.');
   assert.equal(renderProfile(rendered, focus, rest), rendered);
 });
 test('ambiguous, external or incomplete README sources fail before output generation', () => {
   assert.throws(() => replaceBlock('no markers', 'active-projects', ''), /exactly one/);
   assert.throws(() => catalogFromReadme(template().replace('https://github.com/gustavonline/bridge', 'https://example.com/bridge')), /Missing/);
-  assert.throws(() => catalogFromReadme(template() + '\n- [duplicate](https://github.com/arcitai/factory): Duplicate.'), /duplicate/);
+  assert.throws(() => catalogFromReadme(template() + '\n- [duplicate](https://github.com/arcitai/agentic-systems): Duplicate.'), /duplicate/);
   assert.throws(() => chooseFocus(fixture.slice(0, 2), config), /Fewer than three/);
 });
 test('calendar preserves full anonymized counts and exact levels without normalization', () => {

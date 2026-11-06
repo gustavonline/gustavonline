@@ -11,7 +11,7 @@ Founder working with data, AI and software. I help businesses bring their data a
 ## Working on right now
 
 <!-- active-projects:start -->
-- [Factory](https://github.com/arcitai/factory): I’m building Factory as a portable method for using AI agents across software, BI, defence and research.
+- [Agentic Systems](https://github.com/arcitai/agentic-systems): I’m building an open-source framework that brings agents, context, tools and review together across software development, BI, defence and research.
 - [The Onlinesourdough Method](https://github.com/onlinesourdough/OSM-plugin): I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.
 - [OpenPaperDesign](https://github.com/arcitai/openpaperdesign): I wanted somewhere to sketch systems and design interfaces with an AI agent, without another paid design-tool subscription. Michael's paper-rs gave me a native, editable canvas to build on. I keep that foundation and add the integrations and methods I use in my own work.
 <!-- active-projects:end -->
@@ -24,7 +24,7 @@ Founder working with data, AI and software. I help businesses bring their data a
 - [Local AI for Omarchy](https://github.com/gustavonline/omarchy-llama-cpp-local-ai): My setup for running local models on Omarchy with llama.cpp and an optional local Copilot.
 - [Codex Bridge](https://github.com/gustavonline/codex-claude-bridge): Use Codex as one workspace across models, conversations, files and tools. The first bridge connects Claude.
 - [Local Pi worker](https://github.com/gustavonline/local-ai-pi-worker): A separate local Pi worker for delegating tasks through the command line or native RPC.
-- [Power BI for Factory](https://github.com/arcitai/Agentic-PowerBI-System): Power BI foundations, delivery methods and skills. I’m turning it into a module for Factory.
+- [Agentic BI System](https://github.com/arcitai/Agentic-PowerBI-System): Power BI foundations, delivery methods and skills. I’m turning it into a module for Agentic Systems.
 
 **Community**
 
@@ -39,7 +39,7 @@ Founder working with data, AI and software. I help businesses bring their data a
 <!-- portfolio-config
 {
   "anchors": [
-    "arcitai/factory",
+    "arcitai/agentic-systems",
     "onlinesourdough/OSM-plugin"
   ],
   "active": [
@@ -50,10 +50,10 @@ Founder working with data, AI and software. I help businesses bring their data a
     "gustavonline/omarchy-llama-cpp-local-ai"
   ],
   "projects": {
-    "arcitai/factory": {
+    "arcitai/agentic-systems": {
       "category": "tools",
       "status": "Open source",
-      "icon": "/assets/project-marks/factory.svg"
+      "icon": "/assets/project-marks/agentic system.svg"
     },
     "onlinesourdough/OSM-plugin": {
       "category": "tools",

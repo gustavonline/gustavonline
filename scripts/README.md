@@ -19,9 +19,9 @@ horizontal rule. Duplicate, empty or unsupported sections fail the refresh and
 leave the previous files intact. Other projects continue to use their short
 profile-README summary. There is no second catalog or case copy on the website.
 
-Factory's current README no longer has a personal story section. Its short profile
+Agentic Systems' current README no longer has a personal story section. Its short profile
 bullet therefore supplies the website text, using the existing no-story route.
-Do not require Factory to retain a portfolio-only heading or relax validation of
+Do not require Agentic Systems to retain a portfolio-only heading or relax validation of
 the two configured story sources.
 
 Schema 3 records the source README URL, exact commit revision and SHA-256 alongside
@@ -29,7 +29,7 @@ the paragraphs. The updater checks public visibility before reading any project
 README and reads the same commit used for the repository metadata. The browser
 receives only the generated public JSON and has no GitHub credentials.
 
-Factory and The Onlinesourdough Method are stable anchors. The third slot uses the most commits by
+Agentic Systems and The Onlinesourdough Method are stable anchors. The third slot uses the most commits by
 Gustav on the public default branch in 30 days, among explicitly selected tools.
 GitHub pins break activity ties, then README order. An incumbent remains until a
 challenger has at least five commits and 1.5 times its activity. Portfolio and

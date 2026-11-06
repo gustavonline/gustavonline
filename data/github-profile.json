@@ -8,15 +8,15 @@
   "projects": [
     {
       "owner": "arcitai",
-      "repo": "arcitai/factory",
-      "name": "Factory",
-      "url": "https://github.com/arcitai/factory",
-      "description": "I’m building Factory as a portable method for using AI agents across software, BI, defence and research.",
+      "repo": "arcitai/agentic-systems",
+      "name": "Agentic Systems",
+      "url": "https://github.com/arcitai/agentic-systems",
+      "description": "I’m building Agentic Systems as a portable method for using AI agents across software, BI, defence and research.",
       "commits": 64,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
-      "icon": "/assets/project-marks/factory.svg",
+      "icon": "/assets/project-marks/agentic-systems.svg",
       "pinned": true,
       "stars": 1
     },
@@ -113,9 +113,9 @@
     {
       "owner": "arcitai",
       "repo": "arcitai/Agentic-PowerBI-System",
-      "name": "Power BI for Factory",
+      "name": "Agentic BI System",
       "url": "https://github.com/arcitai/Agentic-PowerBI-System",
-      "description": "Power BI foundations, delivery methods and skills. I’m turning it into a module for Factory.",
+      "description": "Power BI foundations, delivery methods and skills. I’m turning it into a module for Agentic Systems.",
       "commits": 1,
       "isPublic": true,
       "category": "tools",
