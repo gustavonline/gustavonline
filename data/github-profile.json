@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-06T12:01:46.997697Z",
+  "generatedAt": "2026-11-06T12:40:09.563Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "1227a244187690113a9c7969a288e8aeda58f93d",
-  "readmeSha256": "b0805a64d5c8c6c2a551ea286c1a7ae01d161150cb62a8ee6396c58e79faa527",
+  "sourceRevision": "ddcfb0aa00520ecad3dc6e275d6be0ae35601dab",
+  "readmeSha256": "96a67f9a7bf6aecf3c8d3773895df55a65f2c4c1ac0f0be5b16de4d8c0ea2a94",
   "windowDays": 30,
   "projects": [
     {
@@ -11,8 +11,8 @@
       "repo": "arcitai/agentic-systems",
       "name": "Agentic Systems",
       "url": "https://github.com/arcitai/agentic-systems",
-      "description": "I’m building an open-source framework that brings agents, context, tools and review together across software development, BI, defence and research.",
-      "commits": 65,
+      "description": "An open-source framework for building and operating agentic systems. Use it for software development, BI, defence, research and other work with AI agents. Start small, use existing tools, and add complexity when a real task needs it.",
+      "commits": 68,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -26,16 +26,16 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
-      "commits": 42,
+      "commits": 45,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/314dcf17a06014df472a32cdb10f847672cba0be/README.md#why-i-built-this",
-        "revision": "314dcf17a06014df472a32cdb10f847672cba0be",
-        "sha256": "7703605de6e67f3f484d5897105cfc37d738bcc3a1ae669b3c82a40ad0f8b6f8",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/ff1b50e3e052651f4d85bb72c3374e4d45fd6709/README.md#why-i-built-this",
+        "revision": "ff1b50e3e052651f4d85bb72c3374e4d45fd6709",
+        "sha256": "c74e9693a2adb3cd3a48a19ec0e7b22b14387c7c9339b94b18122e13861af606",
         "paragraphs": [
           "I built The Onlinesourdough Method to carry useful context, decisions and working methods between AI apps, so each conversation can build on the work that came before.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for planning, building, reviewing and writing. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
@@ -46,27 +46,18 @@
       "stars": 0
     },
     {
-      "owner": "arcitai",
-      "repo": "arcitai/openpaperdesign",
+      "owner": "gustavonline",
+      "repo": "gustavonline/openpaperdesign",
       "name": "OpenPaperDesign",
-      "url": "https://github.com/arcitai/openpaperdesign",
-      "description": "I wanted somewhere to sketch systems and design interfaces with an AI agent, without another paid design-tool subscription. Michael's paper-rs gave me a native, editable canvas to build on. I keep that foundation and add the integrations and methods I use in my own work.",
-      "commits": 101,
+      "url": "https://github.com/gustavonline/openpaperdesign",
+      "description": "A canvas for designs, diagrams and working with your AI agent. Create layouts and graphics, map an architecture, inspect spacing and colours, leave comments, and export your work.",
+      "commits": 33,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/openpaperdesign.svg",
-      "readme": {
-        "section": "Why I built this",
-        "url": "https://github.com/arcitai/openpaperdesign/blob/1ceebd4aff9cdefa07174a26cbf24b7d251a6b5f/README.md#why-i-built-this",
-        "revision": "1ceebd4aff9cdefa07174a26cbf24b7d251a6b5f",
-        "sha256": "a41c75a9da786b6fe18d2af74fa667708ce38d9dfda739ddb134a55b16fe1fa0",
-        "paragraphs": [
-          "I wanted somewhere to sketch systems and design interfaces with an AI agent, without another paid design-tool subscription. Michael's paper-rs gave me a native, editable canvas to build on. I keep that foundation and add the integrations and methods I use in my own work."
-        ]
-      },
       "pinned": false,
-      "stars": 0
+      "stars": 1
     }
   ],
   "moreProjects": [
@@ -75,20 +66,20 @@
       "repo": "gustavonline/omarchy-ai-model-dock",
       "name": "Local AI inference for Omarchy",
       "url": "https://github.com/gustavonline/omarchy-ai-model-dock",
-      "description": "Omarchy AI Model Dock prepares and serves local models with a native hotbar, a private endpoint and an agent CLI and skill.",
-      "commits": 2,
+      "description": "Run local AI models on your Omarchy machine and use them from an agent, an app or another computer.",
+      "commits": 3,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "pinned": true,
-      "stars": 0
+      "stars": 1
     },
     {
       "owner": "gustavonline",
       "repo": "gustavonline/codex-claude-bridge",
       "name": "Codex Bridge",
       "url": "https://github.com/gustavonline/codex-claude-bridge",
-      "description": "Use Codex as one workspace across models, conversations, files and tools. The first bridge connects Claude.",
+      "description": "Claude models in the Codex desktop app. By Gustav Online.",
       "commits": 11,
       "isPublic": true,
       "category": "tools",
@@ -102,7 +93,7 @@
       "repo": "gustavonline/local-ai-pi-worker",
       "name": "Local Pi worker",
       "url": "https://github.com/gustavonline/local-ai-pi-worker",
-      "description": "A separate local Pi worker for delegating tasks through the command line or native RPC.",
+      "description": "Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.",
       "commits": 2,
       "isPublic": true,
       "category": "tools",
@@ -115,7 +106,7 @@
       "repo": "arcitai/Agentic-PowerBI-System",
       "name": "Agentic BI System",
       "url": "https://github.com/arcitai/Agentic-PowerBI-System",
-      "description": "Power BI foundations, delivery methods and skills. I’m turning it into a module for Agentic Systems.",
+      "description": "Turn a business question into a Power BI model and report you can check and maintain. The system provides skills for defining measures, building the model, designing reports and validating the files, with records of each result.",
       "commits": 1,
       "isPublic": true,
       "category": "tools",
@@ -142,7 +133,7 @@
       "repo": "gustavonline/youtube-content",
       "name": "YouTube content",
       "url": "https://github.com/gustavonline/youtube-content",
-      "description": "Lessons, notes and useful files from my videos.",
+      "description": "Notes, examples, and useful files to go with my YouTube videos.",
       "commits": 0,
       "isPublic": true,
       "category": "resources",
@@ -155,8 +146,8 @@
       "repo": "gustavonline/gustavonline-website",
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
-      "description": "My website, with current projects and ways to get in touch.",
-      "commits": 36,
+      "description": "Portfolio — my personal website, current projects, open source work and real GitHub activity.",
+      "commits": 40,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -168,7 +159,7 @@
   "contributions": {
     "from": "2025-11-07",
     "to": "2026-11-06",
-    "total": 44064,
+    "total": 44111,
     "weeks": [
       {
         "days": [
@@ -2561,13 +2552,13 @@
           {
             "date": "2026-11-05",
             "weekday": 4,
-            "count": 26,
+            "count": 37,
             "level": 1
           },
           {
             "date": "2026-11-06",
             "weekday": 5,
-            "count": 16,
+            "count": 52,
             "level": 1
           }
         ]
