@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-08T13:44:04.177Z",
+  "generatedAt": "2026-11-08T22:17:41.260Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "2e88606180e664f6276527fca0c9753269c3d4bf",
+  "sourceRevision": "2a3446ec5b4ff1089db746916df4e6dbea73cca7",
   "readmeSha256": "dbbb628f455f2ef1c6e7c5c6e00b83372d6efc6670f1e9cf45fffd2c4e19e4a5",
   "windowDays": 30,
   "projects": [
@@ -12,7 +12,7 @@
       "name": "Agentic Systems",
       "url": "https://github.com/arcitai/agentic-systems",
       "description": "An open-source framework for building and operating agentic systems. Use it for software development, BI, defence, research and other work with AI agents. Start small, use existing tools, and add complexity when a real task needs it.",
-      "commits": 63,
+      "commits": 60,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
