@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-10T07:31:59.004Z",
+  "generatedAt": "2026-11-10T19:52:40.175Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "5728b12aeb5ff6c3f8bdd16422d2a761ac6b1788",
+  "sourceRevision": "4620bfe669c00173a5fba83d1267f4385f120594",
   "readmeSha256": "dbbb628f455f2ef1c6e7c5c6e00b83372d6efc6670f1e9cf45fffd2c4e19e4a5",
   "windowDays": 30,
   "projects": [
@@ -12,7 +12,7 @@
       "name": "Agentic Systems",
       "url": "https://github.com/arcitai/agentic-systems",
       "description": "An open-source framework for building and operating agentic systems. Use it for software development, BI, defence, research and other work with AI agents. Start small, use existing tools, and add complexity when a real task needs it.",
-      "commits": 52,
+      "commits": 50,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -26,20 +26,20 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 25,
+      "commits": 112,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/5afb77fd7b24dca4c486acdc78e0ed161b9f200c/README.md#why-i-built-this",
-        "revision": "5afb77fd7b24dca4c486acdc78e0ed161b9f200c",
-        "sha256": "43f03354705d23b0e2b4f871d9d617225c833321683b62a94ad33255ee95c2a4",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/1089ced0cd0d1a42f351f7f4e62f2b0840a67a65/README.md#why-i-built-this",
+        "revision": "1089ced0cd0d1a42f351f7f4e62f2b0840a67a65",
+        "sha256": "9c2aea0319f7f2a983ed56ce505d2db85feb68def4176b666dcf17bbacfac900",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for planning, building, reviewing and writing. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
-          "Your context stays in a home you choose, such as Notion or a repository. The app provides the models, tools and permissions; the method helps the assistant find and maintain the context it needs."
+          "Your context stays in a home you choose, in Notion. The app provides the models, tools and permissions; the method helps the assistant find and maintain the context it needs."
         ]
       },
       "pinned": true,
@@ -159,7 +159,7 @@
   "contributions": {
     "from": "2025-11-11",
     "to": "2026-11-10",
-    "total": 44157,
+    "total": 44257,
     "weeks": [
       {
         "days": [
@@ -2460,31 +2460,31 @@
           {
             "date": "2026-10-26",
             "weekday": 1,
-            "count": 49,
+            "count": 54,
             "level": 1
           },
           {
             "date": "2026-10-27",
             "weekday": 2,
-            "count": 28,
+            "count": 40,
             "level": 1
           },
           {
             "date": "2026-10-28",
             "weekday": 3,
-            "count": 17,
+            "count": 25,
             "level": 1
           },
           {
             "date": "2026-10-29",
             "weekday": 4,
-            "count": 12,
+            "count": 18,
             "level": 1
           },
           {
             "date": "2026-10-30",
             "weekday": 5,
-            "count": 16,
+            "count": 17,
             "level": 1
           },
           {
@@ -2506,37 +2506,37 @@
           {
             "date": "2026-11-02",
             "weekday": 1,
-            "count": 11,
+            "count": 14,
             "level": 1
           },
           {
             "date": "2026-11-03",
             "weekday": 2,
-            "count": 23,
+            "count": 24,
             "level": 1
           },
           {
             "date": "2026-11-04",
             "weekday": 3,
-            "count": 6,
+            "count": 11,
             "level": 1
           },
           {
             "date": "2026-11-05",
             "weekday": 4,
-            "count": 37,
+            "count": 62,
             "level": 1
           },
           {
             "date": "2026-11-06",
             "weekday": 5,
-            "count": 87,
+            "count": 96,
             "level": 1
           },
           {
             "date": "2026-11-07",
             "weekday": 6,
-            "count": 3,
+            "count": 5,
             "level": 1
           }
         ]
@@ -2552,13 +2552,13 @@
           {
             "date": "2026-11-09",
             "weekday": 1,
-            "count": 7,
+            "count": 9,
             "level": 1
           },
           {
             "date": "2026-11-10",
             "weekday": 2,
-            "count": 1,
+            "count": 22,
             "level": 1
           }
         ]
