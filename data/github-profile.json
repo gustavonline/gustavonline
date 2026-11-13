@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-13T06:58:17.404Z",
+  "generatedAt": "2026-11-13T19:54:03.645Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "fda4e3ae08426b4bfad3fb17354a5a5d9ff03c2b",
+  "sourceRevision": "510dd99456dd0a01085cdbb2cac721f7f6a2d938",
   "readmeSha256": "cb248b325a5a4f19aff94f93845fc882971760db26388b86391583dfe3995f97",
   "windowDays": 30,
   "projects": [
@@ -26,16 +26,16 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 105,
+      "commits": 109,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/3ab8926c1e2461ce992177e9043b964288948859/README.md#why-i-built-this",
-        "revision": "3ab8926c1e2461ce992177e9043b964288948859",
-        "sha256": "b43a29295f205124a63dd1d373f2ef74b3d749d9e96a6f6a8b16531aaee745f4",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/d87da783e6db6ff4aeb71668414a58e0191ddecf/README.md#why-i-built-this",
+        "revision": "d87da783e6db6ff4aeb71668414a58e0191ddecf",
+        "sha256": "fbaf8a26e676208e45bca5f24c46ae5277a723dbf31a474a6240cd7379999bdc",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for planning, building, reviewing and writing. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
@@ -51,7 +51,7 @@
       "name": "OpenPaperDesign",
       "url": "https://github.com/gustavonline/openpaperdesign",
       "description": "Canvas for your agent. Create layouts and graphics, map an architecture, inspect spacing and colours, leave comments, and export your work.",
-      "commits": 48,
+      "commits": 54,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -159,7 +159,7 @@
   "contributions": {
     "from": "2025-11-14",
     "to": "2026-11-13",
-    "total": 44274,
+    "total": 44300,
     "weeks": [
       {
         "days": [
@@ -2546,7 +2546,7 @@
           {
             "date": "2026-11-11",
             "weekday": 3,
-            "count": 11,
+            "count": 16,
             "level": 1
           },
           {
@@ -2558,8 +2558,8 @@
           {
             "date": "2026-11-13",
             "weekday": 5,
-            "count": 0,
-            "level": 0
+            "count": 21,
+            "level": 1
           }
         ]
       }
