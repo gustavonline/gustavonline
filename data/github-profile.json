@@ -1,16 +1,16 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-13T19:54:03.645Z",
+  "generatedAt": "2026-11-14T06:47:07.758Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "510dd99456dd0a01085cdbb2cac721f7f6a2d938",
-  "readmeSha256": "cb248b325a5a4f19aff94f93845fc882971760db26388b86391583dfe3995f97",
+  "sourceRevision": "32e8138886a99b5a13bd386acf24e1b2bebdc299",
+  "readmeSha256": "e48c65b5f551b406c8fe9581131e2a0463688ba160620a08799c14a922104952",
   "windowDays": 30,
   "projects": [
     {
       "owner": "arcitai",
-      "repo": "arcitai/agentic-systems",
+      "repo": "arcitai/agentic-system",
       "name": "Agentic Systems",
-      "url": "https://github.com/arcitai/agentic-systems",
+      "url": "https://github.com/arcitai/agentic-system",
       "description": "An open-source framework for building and operating agentic systems. Use it for software development, BI, defence, research and other work with AI agents. Start small, use existing tools, and add complexity when a real task needs it.",
       "commits": 48,
       "isPublic": true,
@@ -126,7 +126,7 @@
       "status": "Community handoff",
       "icon": "/assets/project-marks/pi-desktop.svg",
       "pinned": true,
-      "stars": 153
+      "stars": 152
     },
     {
       "owner": "gustavonline",
@@ -157,18 +157,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-14",
-    "to": "2026-11-13",
-    "total": 44300,
+    "from": "2025-11-15",
+    "to": "2026-11-14",
+    "total": 44302,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-11-14",
-            "weekday": 5,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-11-15",
             "weekday": 6,
@@ -2558,7 +2552,13 @@
           {
             "date": "2026-11-13",
             "weekday": 5,
-            "count": 21,
+            "count": 22,
+            "level": 1
+          },
+          {
+            "date": "2026-11-14",
+            "weekday": 6,
+            "count": 1,
             "level": 1
           }
         ]
