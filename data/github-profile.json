@@ -1,18 +1,18 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-14T06:47:07.758Z",
+  "generatedAt": "2026-11-14T18:19:56.664Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "32e8138886a99b5a13bd386acf24e1b2bebdc299",
-  "readmeSha256": "e48c65b5f551b406c8fe9581131e2a0463688ba160620a08799c14a922104952",
+  "sourceRevision": "35981e245da6ec33c8384a4d5428a0fb2a734a73",
+  "readmeSha256": "833d8e7fa53eb1d5bd8438c30d1e4c27de752886404e0d542f148c7006ccf36c",
   "windowDays": 30,
   "projects": [
     {
       "owner": "arcitai",
       "repo": "arcitai/agentic-system",
-      "name": "Agentic Systems",
+      "name": "Agentic System",
       "url": "https://github.com/arcitai/agentic-system",
-      "description": "An open-source framework for building and operating agentic systems. Use it for software development, BI, defence, research and other work with AI agents. Start small, use existing tools, and add complexity when a real task needs it.",
-      "commits": 48,
+      "description": "Build a good environment for capable agents to do useful work.",
+      "commits": 57,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -51,7 +51,7 @@
       "name": "OpenPaperDesign",
       "url": "https://github.com/gustavonline/openpaperdesign",
       "description": "Canvas for your agent. Create layouts and graphics, map an architecture, inspect spacing and colours, leave comments, and export your work.",
-      "commits": 54,
+      "commits": 91,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -76,20 +76,6 @@
     },
     {
       "owner": "gustavonline",
-      "repo": "gustavonline/codex-claude-bridge",
-      "name": "Codex Bridge",
-      "url": "https://github.com/gustavonline/codex-claude-bridge",
-      "description": "Claude models in the Codex desktop app. By Gustav Online.",
-      "commits": 3,
-      "isPublic": true,
-      "category": "tools",
-      "status": "Public preview",
-      "icon": "/assets/project-marks/codex-bridge.svg",
-      "pinned": false,
-      "stars": 0
-    },
-    {
-      "owner": "gustavonline",
       "repo": "gustavonline/local-ai-pi-worker",
       "name": "Local Pi worker",
       "url": "https://github.com/gustavonline/local-ai-pi-worker",
@@ -98,6 +84,20 @@
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
+      "pinned": false,
+      "stars": 0
+    },
+    {
+      "owner": "gustavonline",
+      "repo": "gustavonline/codex-claude-bridge",
+      "name": "Codex Bridge",
+      "url": "https://github.com/gustavonline/codex-claude-bridge",
+      "description": "Claude models in the Codex desktop app. By Gustav Online.",
+      "commits": 1,
+      "isPublic": true,
+      "category": "tools",
+      "status": "Public preview",
+      "icon": "/assets/project-marks/codex-bridge.svg",
       "pinned": false,
       "stars": 0
     },
@@ -159,7 +159,7 @@
   "contributions": {
     "from": "2025-11-15",
     "to": "2026-11-14",
-    "total": 44302,
+    "total": 44359,
     "weeks": [
       {
         "days": [
@@ -2552,13 +2552,13 @@
           {
             "date": "2026-11-13",
             "weekday": 5,
-            "count": 22,
+            "count": 42,
             "level": 1
           },
           {
             "date": "2026-11-14",
             "weekday": 6,
-            "count": 1,
+            "count": 38,
             "level": 1
           }
         ]
