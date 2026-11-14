@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-14T18:19:56.664Z",
+  "generatedAt": "2026-11-14T22:39:00.184Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "35981e245da6ec33c8384a4d5428a0fb2a734a73",
+  "sourceRevision": "3c02bf97ddf3984bcb16db77477aa3e25943eb19",
   "readmeSha256": "833d8e7fa53eb1d5bd8438c30d1e4c27de752886404e0d542f148c7006ccf36c",
   "windowDays": 30,
   "projects": [
@@ -12,7 +12,7 @@
       "name": "Agentic System",
       "url": "https://github.com/arcitai/agentic-system",
       "description": "Build a good environment for capable agents to do useful work.",
-      "commits": 57,
+      "commits": 53,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
