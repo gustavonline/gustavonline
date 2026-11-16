@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-16T06:50:55.805Z",
+  "generatedAt": "2026-11-16T22:22:25.749Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "2236244b16f3f0dbc6f420f85a9235be05c43cc9",
-  "readmeSha256": "833d8e7fa53eb1d5bd8438c30d1e4c27de752886404e0d542f148c7006ccf36c",
+  "sourceRevision": "aa36494985b611bc2481eb56ba9d9b524613dd4a",
+  "readmeSha256": "c15084fc198a0669f2bd08c00821a39fbe3ef47ae04e0a69b8d13fa1ee405bfa",
   "windowDays": 30,
   "projects": [
     {
@@ -76,19 +76,6 @@
     },
     {
       "owner": "gustavonline",
-      "repo": "gustavonline/local-ai-pi-worker",
-      "name": "Local Pi worker",
-      "url": "https://github.com/gustavonline/local-ai-pi-worker",
-      "description": "Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.",
-      "commits": 2,
-      "isPublic": true,
-      "category": "tools",
-      "status": "Open source",
-      "pinned": false,
-      "stars": 0
-    },
-    {
-      "owner": "gustavonline",
       "repo": "gustavonline/codex-claude-bridge",
       "name": "Codex Bridge",
       "url": "https://github.com/gustavonline/codex-claude-bridge",
@@ -102,12 +89,25 @@
       "stars": 0
     },
     {
+      "owner": "gustavonline",
+      "repo": "gustavonline/local-ai-pi-worker",
+      "name": "Local Pi worker",
+      "url": "https://github.com/gustavonline/local-ai-pi-worker",
+      "description": "Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.",
+      "commits": 1,
+      "isPublic": true,
+      "category": "tools",
+      "status": "Open source",
+      "pinned": false,
+      "stars": 0
+    },
+    {
       "owner": "arcitai",
       "repo": "arcitai/Agentic-PowerBI-System",
       "name": "Agentic BI System",
       "url": "https://github.com/arcitai/Agentic-PowerBI-System",
       "description": "Turn a business question into a Power BI model and report you can check and maintain. The system provides skills for defining measures, building the model, designing reports and validating the files, with records of each result.",
-      "commits": 1,
+      "commits": 0,
       "isPublic": true,
       "category": "tools",
       "status": "In development",
@@ -147,7 +147,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "Portfolio — my personal website, current projects, open source work and real GitHub activity.",
-      "commits": 40,
+      "commits": 37,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -159,7 +159,7 @@
   "contributions": {
     "from": "2025-11-17",
     "to": "2026-11-16",
-    "total": 44369,
+    "total": 44388,
     "weeks": [
       {
         "days": [
@@ -2558,8 +2558,8 @@
           {
             "date": "2026-11-16",
             "weekday": 1,
-            "count": 0,
-            "level": 0
+            "count": 19,
+            "level": 1
           }
         ]
       }
