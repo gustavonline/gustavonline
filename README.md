@@ -21,8 +21,8 @@ Founder working with data, AI and software. I help businesses bring their data a
 
 - [Local AI inference for Omarchy](https://github.com/gustavonline/omarchy-ai-model-dock): Run local AI models on your Omarchy machine and use them from an agent, an app or another computer.
 - [Codex Bridge](https://github.com/gustavonline/codex-claude-bridge): Claude models in the Codex desktop app. By Gustav Online.
-- [Local Pi worker](https://github.com/gustavonline/local-ai-pi-worker): Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.
 - [Agentic BI System](https://github.com/arcitai/Agentic-PowerBI-System): Turn a business question into a Power BI model and report you can check and maintain. The system provides skills for defining measures, building the model, designing reports and validating the files, with records of each result.
+- [Local Pi worker](https://github.com/gustavonline/local-ai-pi-worker): Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.
 
 **Community**
 

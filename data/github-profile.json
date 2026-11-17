@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-17T08:10:48.768Z",
+  "generatedAt": "2026-11-17T21:07:29.576Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "d241921e563d2b3c61f716610bf1972780a1b5f8",
-  "readmeSha256": "c15084fc198a0669f2bd08c00821a39fbe3ef47ae04e0a69b8d13fa1ee405bfa",
+  "sourceRevision": "a634b092bdf10394c1fdf78fda675ac4a79304bf",
+  "readmeSha256": "e1311c538179fb4a9f51813e34fb9dc5f577b8eb4ae611e37a31796d96f57bea",
   "windowDays": 30,
   "projects": [
     {
@@ -57,7 +57,7 @@
       "status": "Open source",
       "icon": "/assets/project-marks/openpaperdesign.svg",
       "pinned": false,
-      "stars": 1
+      "stars": 2
     }
   ],
   "moreProjects": [
@@ -80,24 +80,11 @@
       "name": "Codex Bridge",
       "url": "https://github.com/gustavonline/codex-claude-bridge",
       "description": "Claude models in the Codex desktop app. By Gustav Online.",
-      "commits": 1,
+      "commits": 0,
       "isPublic": true,
       "category": "tools",
       "status": "Public preview",
       "icon": "/assets/project-marks/codex-bridge.svg",
-      "pinned": false,
-      "stars": 0
-    },
-    {
-      "owner": "gustavonline",
-      "repo": "gustavonline/local-ai-pi-worker",
-      "name": "Local Pi worker",
-      "url": "https://github.com/gustavonline/local-ai-pi-worker",
-      "description": "Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.",
-      "commits": 1,
-      "isPublic": true,
-      "category": "tools",
-      "status": "Open source",
       "pinned": false,
       "stars": 0
     },
@@ -111,6 +98,19 @@
       "isPublic": true,
       "category": "tools",
       "status": "In development",
+      "pinned": false,
+      "stars": 0
+    },
+    {
+      "owner": "gustavonline",
+      "repo": "gustavonline/local-ai-pi-worker",
+      "name": "Local Pi worker",
+      "url": "https://github.com/gustavonline/local-ai-pi-worker",
+      "description": "Run a Pi coding agent against a local model server on Linux. The package keeps the worker configuration separate and gives a parent agent a command-line and RPC interface for delegating work.",
+      "commits": 0,
+      "isPublic": true,
+      "category": "tools",
+      "status": "Open source",
       "pinned": false,
       "stars": 0
     },
@@ -159,7 +159,7 @@
   "contributions": {
     "from": "2025-11-18",
     "to": "2026-11-17",
-    "total": 44388,
+    "total": 44397,
     "weeks": [
       {
         "days": [
@@ -2558,8 +2558,8 @@
           {
             "date": "2026-11-17",
             "weekday": 2,
-            "count": 0,
-            "level": 0
+            "count": 9,
+            "level": 1
           }
         ]
       }
