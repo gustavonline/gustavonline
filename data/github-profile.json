@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-20T07:31:23.796Z",
+  "generatedAt": "2026-11-20T20:25:14.345Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "56606e6cf3516771ffe0eb7ba238711b6ef32f29",
-  "readmeSha256": "6c3ef65c9aee5ef0f6e536132820dad435c5eef9410c7b9e46af843b8d8d3bc4",
+  "sourceRevision": "55af5f905571b45e6e806506c1e4e0ce348ed4fb",
+  "readmeSha256": "fc6b46fb16313cddf555baf6b3d2c54272d116c40134a6b4f309308257a6fe7d",
   "windowDays": 30,
   "projects": [
     {
@@ -12,7 +12,7 @@
       "name": "Agentic System",
       "url": "https://github.com/arcitai/agentic-system",
       "description": "Build a good environment for capable agents to do useful work.",
-      "commits": 49,
+      "commits": 52,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -26,16 +26,16 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 148,
+      "commits": 209,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/182e51a33e6df5c79b400518df82e1cb4ce7fddb/README.md#why-i-built-this",
-        "revision": "182e51a33e6df5c79b400518df82e1cb4ce7fddb",
-        "sha256": "f69d8be0a8419e60c87a1a385a5f79467def3d13a84132109429565c4b88b09d",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/8caa36d4064a2c12f174b7ee4e36fbd7b6ee77c5/README.md#why-i-built-this",
+        "revision": "8caa36d4064a2c12f174b7ee4e36fbd7b6ee77c5",
+        "sha256": "626ef724cc9744fdcbdc76569eb9c3e62a016d2d5e8e0b6e3efc8d61916722b7",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for context, onboarding, writing and collaboration. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
@@ -57,7 +57,7 @@
       "status": "Open source",
       "icon": "/assets/project-marks/openpaperdesign.svg",
       "pinned": false,
-      "stars": 2
+      "stars": 3
     }
   ],
   "moreProjects": [
@@ -76,9 +76,9 @@
     },
     {
       "owner": "gustavonline",
-      "repo": "gustavonline/codex-claude-bridge",
-      "name": "Codex Bridge",
-      "url": "https://github.com/gustavonline/codex-claude-bridge",
+      "repo": "gustavonline/codex-model-bridge",
+      "name": "Codex Model Bridge",
+      "url": "https://github.com/gustavonline/codex-model-bridge",
       "description": "Claude models in the Codex desktop app. By Gustav Online.",
       "commits": 0,
       "isPublic": true,
@@ -147,7 +147,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "Portfolio — my personal website, current projects, open source work and real GitHub activity.",
-      "commits": 37,
+      "commits": 45,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -159,7 +159,7 @@
   "contributions": {
     "from": "2025-11-21",
     "to": "2026-11-20",
-    "total": 44501,
+    "total": 44612,
     "weeks": [
       {
         "days": [
@@ -2558,7 +2558,7 @@
           {
             "date": "2026-11-20",
             "weekday": 5,
-            "count": 19,
+            "count": 130,
             "level": 1
           }
         ]
