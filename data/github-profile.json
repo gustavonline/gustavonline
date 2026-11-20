@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-19T20:50:10.437Z",
+  "generatedAt": "2026-11-20T07:31:23.796Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "c8d68b0f4cf9a8e3da68be5fbd5abba6aea5a2a2",
+  "sourceRevision": "56606e6cf3516771ffe0eb7ba238711b6ef32f29",
   "readmeSha256": "6c3ef65c9aee5ef0f6e536132820dad435c5eef9410c7b9e46af843b8d8d3bc4",
   "windowDays": 30,
   "projects": [
@@ -26,16 +26,16 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 125,
+      "commits": 148,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/a9c35e2b514f8cd95f81e68c4d3a0e03642cc935/README.md#why-i-built-this",
-        "revision": "a9c35e2b514f8cd95f81e68c4d3a0e03642cc935",
-        "sha256": "2fbae78bc4807da4174d0a6a0d6bb3b4e5cbd74b7d11412834949e05d6de2a5b",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/182e51a33e6df5c79b400518df82e1cb4ce7fddb/README.md#why-i-built-this",
+        "revision": "182e51a33e6df5c79b400518df82e1cb4ce7fddb",
+        "sha256": "f69d8be0a8419e60c87a1a385a5f79467def3d13a84132109429565c4b88b09d",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for context, onboarding, writing and collaboration. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
@@ -157,18 +157,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-20",
-    "to": "2026-11-19",
-    "total": 44470,
+    "from": "2025-11-21",
+    "to": "2026-11-20",
+    "total": 44501,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-11-20",
-            "weekday": 4,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-11-21",
             "weekday": 5,
@@ -2558,7 +2552,13 @@
           {
             "date": "2026-11-19",
             "weekday": 4,
-            "count": 37,
+            "count": 49,
+            "level": 1
+          },
+          {
+            "date": "2026-11-20",
+            "weekday": 5,
+            "count": 19,
             "level": 1
           }
         ]
