@@ -5,7 +5,7 @@
     "onlinesourdough/OSM-plugin"
   ],
   "active": [
-    "gustavonline/codex-claude-bridge",
+    "gustavonline/codex-model-bridge",
     "gustavonline/openpaperdesign",
     "arcitai/Agentic-PowerBI-System",
     "gustavonline/local-ai-pi-worker",
@@ -25,12 +25,12 @@
       "nodeId": "R_kgDOUOqSpw",
       "name": "The Onlinesourdough Method"
     },
-    "gustavonline/codex-claude-bridge": {
+    "gustavonline/codex-model-bridge": {
       "category": "tools",
       "status": "Public preview",
       "icon": "/assets/project-marks/codex-bridge.svg",
       "nodeId": "R_kgDOVHm2GA",
-      "name": "Codex Bridge"
+      "name": "Codex Model Bridge"
     },
     "gustavonline/openpaperdesign": {
       "category": "tools",
