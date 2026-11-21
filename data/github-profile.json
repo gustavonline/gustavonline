@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-20T20:34:44.201Z",
+  "generatedAt": "2026-11-21T07:27:14.093Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "7db5954585e469e71d9be81263352c211ee8113a",
+  "sourceRevision": "e7c253218b8a88ea736de0091ffa02c5d394cb28",
   "readmeSha256": "fc6b46fb16313cddf555baf6b3d2c54272d116c40134a6b4f309308257a6fe7d",
   "windowDays": 30,
   "projects": [
@@ -26,15 +26,15 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 209,
+      "commits": 218,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/8caa36d4064a2c12f174b7ee4e36fbd7b6ee77c5/README.md#why-i-built-this",
-        "revision": "8caa36d4064a2c12f174b7ee4e36fbd7b6ee77c5",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/8944226672783da0c0e72ad50d668827001e8571/README.md#why-i-built-this",
+        "revision": "8944226672783da0c0e72ad50d668827001e8571",
         "sha256": "626ef724cc9744fdcbdc76569eb9c3e62a016d2d5e8e0b6e3efc8d61916722b7",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
@@ -80,7 +80,7 @@
       "name": "Codex Model Bridge",
       "url": "https://github.com/gustavonline/codex-model-bridge",
       "description": "Claude models in the Codex desktop app. By Gustav Online.",
-      "commits": 0,
+      "commits": 1,
       "isPublic": true,
       "category": "tools",
       "status": "Public preview",
@@ -157,18 +157,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-21",
-    "to": "2026-11-20",
-    "total": 44613,
+    "from": "2025-11-22",
+    "to": "2026-11-21",
+    "total": 44652,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-11-21",
-            "weekday": 5,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-11-22",
             "weekday": 6,
@@ -2558,8 +2552,14 @@
           {
             "date": "2026-11-20",
             "weekday": 5,
-            "count": 131,
+            "count": 170,
             "level": 1
+          },
+          {
+            "date": "2026-11-21",
+            "weekday": 6,
+            "count": 0,
+            "level": 0
           }
         ]
       }
