@@ -1,6 +1,7 @@
-"""Read-only alpha inspection of the rounded blue tiles; never edits pixels."""
+"""Read-only alpha inspection of every rounded icon; never edits pixels."""
 from collections import Counter
 import json
+import math
 import struct
 import sys
 import zlib
@@ -25,6 +26,7 @@ def inspect(path):
     previous = bytearray(stride)
     alpha_min, alpha_max, interior_count = 255, 0, 0
     outside_transparent = 0
+    shape_samples, bad_shape_samples = 0, 0
     colors = Counter()
     for y in range(height):
         offset = y * (stride + 1)
@@ -48,6 +50,14 @@ def inspect(path):
                 assert method == 0
         for x in range(width):
             alpha = row[x * channels + 3] if channels == 4 else 255
+            if x % 8 == 0 and y % 8 == 0:
+                # The canonical 1024px tile is inset 32px, with 230px corners.
+                # Exclude only the 2px antialiased boundary from hard checks.
+                qx, qy = abs(x + .5 - 512) - 250, abs(y + .5 - 512) - 250
+                distance = math.hypot(max(qx, 0), max(qy, 0)) + min(max(qx, qy), 0) - 230
+                shape_samples += 1
+                if (distance < -2 and alpha != 255) or (distance > 2 and alpha != 0):
+                    bad_shape_samples += 1
             # Broad interior rectangle spans the areas where the bad variants
             # had holes. Rounded external corners intentionally stay excluded.
             if width * .15 <= x < width * .85 and height * .15 <= y < height * .85:
@@ -61,7 +71,8 @@ def inspect(path):
     return dict(path=str(path), width=width, height=height, interior_samples=interior_count,
                 interior_alpha_min=alpha_min, interior_alpha_max=alpha_max,
                 transparent_corner_samples=outside_transparent, dominant_colors=colors.most_common(2),
-                ok=alpha_min == 255 and outside_transparent > 0)
+                shape_samples=shape_samples, bad_shape_samples=bad_shape_samples,
+                ok=width == height == 1024 and alpha_min == 255 and outside_transparent > 0 and bad_shape_samples == 0)
 
 
 if __name__ == '__main__':

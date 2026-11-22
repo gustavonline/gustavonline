@@ -3,7 +3,7 @@
 Optional navigation assets in three visual families. They do not install a
 method, create a database, change a source route or replace an existing brand.
 The published core and Agentic System root marks remain their canonical marks.
-Use the PNG files as Notion icons; the Agentic System SVGs remain editable.
+Use the PNG files as Notion icons; the Agentic System SVGs remain editable. Every navigation canvas has the same rounded silhouette and transparent exterior. The open families have no enclosing stroke or frame.
 
 - `osm`: open espresso glyphs with warm orange details and a light warm canvas.
 - `agentic`: cream glyphs on the original solid blue rounded tile.
@@ -33,3 +33,9 @@ To rebuild the blue SVG/PNG pairs, run
 `node scripts/notion-icons/generate_agentic.mjs` from the repository. It uses
 the installed Playwright CLI skill and an isolated browser session. It does
 not open an account or read a personal workspace.
+
+## Rounded canvas correction · 22 November 2026
+
+The warm and neutral canvases use the same 1024px viewbox and rounded 960px tile (32px inset, 230px corner radius) as Agentic System. This changes only the outer silhouette; the approved source glyphs and colors are preserved. Knowledge, Memory, Skills and Content use the same treatment. Canonical product/root marks and journal-entry stars are retained.
+
+Rebuild the warm and neutral PNGs with `node scripts/notion-icons/round_canvases.mjs`. The script checks each immutable source hash, places the artwork in an SVG clip and exports it through an isolated browser. It does not extract backgrounds or remove interior pixels. Source pins and geometry are in `scripts/notion-icons/rounded-sources.json`.
