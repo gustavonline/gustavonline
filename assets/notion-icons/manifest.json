@@ -1,0 +1,164 @@
+{
+  "families": {
+    "osm": "open warm glyphs",
+    "agentic": "solid blue rounded tiles; deterministic SVG/PNG",
+    "gustavonline": "open charcoal/orange/olive glyphs"
+  },
+  "assets": [
+    {
+      "path": "assets/notion-icons/agentic/architecture.png",
+      "sha256": "700ff6c8cbfbe29c6a6265033f186a9c1f53a2b70d8c8c2f8e379ac2fe99b0d5",
+      "bytes": 17931
+    },
+    {
+      "path": "assets/notion-icons/agentic/automation-upkeep.png",
+      "sha256": "cd95eca5fd17b7ad8b84a3d0c7cf66b01b3c59d411b3845ca2d392f94e0ccd58",
+      "bytes": 30563
+    },
+    {
+      "path": "assets/notion-icons/agentic/context-access.png",
+      "sha256": "cc9c36398b5d3ac0920ad3053ee346be500ce9b8403a65d70c992382c16df810",
+      "bytes": 19379
+    },
+    {
+      "path": "assets/notion-icons/agentic/definition.png",
+      "sha256": "2a0f39f52ac373fc96688cc0bcc3d1f378b269cadb1e9131d779646422c6ed1e",
+      "bytes": 16707
+    },
+    {
+      "path": "assets/notion-icons/agentic/reference-library.png",
+      "sha256": "3217d9355c941b7f4e90d73409d1d2ce247788817d33847a3802f49c0e3627d3",
+      "bytes": 16420
+    },
+    {
+      "path": "assets/notion-icons/agentic/releases-documentation.png",
+      "sha256": "af6d385ce4b6ebc539d6888ef6bea3a886a679f94db9e8489d56cea45e1de659",
+      "bytes": 19765
+    },
+    {
+      "path": "assets/notion-icons/agentic/setup-tools.png",
+      "sha256": "435009c772c83903006b158f2ee809d5f9fc6c27887fdab78fed0c40563dae5b",
+      "bytes": 19531
+    },
+    {
+      "path": "assets/notion-icons/agentic/skills.png",
+      "sha256": "960c9646f57f561aea420e0d42a5914b7d2d314240cb54a5aa93b494e18f603e",
+      "bytes": 18991
+    },
+    {
+      "path": "assets/notion-icons/agentic/work-evaluation.png",
+      "sha256": "98c171fb52d17dbb3783226ec667b89b8cf26ce83360619a0476f662963c17c5",
+      "bytes": 19659
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/betting.png",
+      "sha256": "006012728a887ffdbe031851f4f0552bda02744f501e92b89a368a15675d5679",
+      "bytes": 1094681
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/books.png",
+      "sha256": "71dc08256b70715ccf39efc14d30b3282bce94ee1d3e7bdbf3c69c6271f6dc77",
+      "bytes": 1111574
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/business-home.png",
+      "sha256": "aa2d17aa6e2a28606ac39abaac8e637ee94deaca4d51ab0ee5d2178e200d0970",
+      "bytes": 1007366
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/clients.png",
+      "sha256": "3f5c9560d04680d450668ca39905c7c57397e60311d8fc214750aaa6db4ba1f9",
+      "bytes": 1143321
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/finance.png",
+      "sha256": "df7acf987f074aa767ec31e95744b38675a5ee001b784c429603b297464d60fc",
+      "bytes": 1101120
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/goals.png",
+      "sha256": "9142999b02fc9b1bbb478dfca083935a92a6bc2056845cce98964097a1e4e6eb",
+      "bytes": 1191702
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/journal.png",
+      "sha256": "9cb3f8abf65a5f5325f72da007b62457f990210421b37be3b534d9718b96b176",
+      "bytes": 1068725
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/mindset.png",
+      "sha256": "eb4b5a45d1aed38a97757268f89b299dbb5e2bbca53c3e6558d352ccd5d39a67",
+      "bytes": 1123573
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/monthly-planning.png",
+      "sha256": "2808b71e639035945617078b0c3f9f85615aa613e1362b52f72ca8f2a9ad8e03",
+      "bytes": 1140149
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/personal-home.png",
+      "sha256": "3c06841cc42e4a0b6e1e476cb25bcc7c36b70d6cd0587a47aa927f57c3233759",
+      "bytes": 1126784
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/projects.png",
+      "sha256": "09fa8793359dc9e8aac24a23bf39e912c2f817a52c17a2cdd17805bf2848995f",
+      "bytes": 1094319
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/study.png",
+      "sha256": "131a6981236189f7ffab57910e88f3b41d265d94f6559023eca472a81abc7374",
+      "bytes": 1181066
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/tasks.png",
+      "sha256": "82f9573e41042c01ba465ef6a95ef39e8181fe94f40ae1bff923842af6068b7b",
+      "bytes": 1128593
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/trading.png",
+      "sha256": "165d2c054a7902462c8b6d4a948c6609c10926049d19fd7b6cc0da9d596f51e0",
+      "bytes": 1116351
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/workout.png",
+      "sha256": "7cac45ad4f9f5af210cccb349bfb68217a1dc3014072b9e91b596fc04673d2ba",
+      "bytes": 1065050
+    },
+    {
+      "path": "assets/notion-icons/osm/architecture.png",
+      "sha256": "99437bcf43d06ba9ba8e61876fbff7eb970c0c383f58c83f3012ee1d93430379",
+      "bytes": 1086331
+    },
+    {
+      "path": "assets/notion-icons/osm/automation-upkeep.png",
+      "sha256": "8e92d096d718ce1a0632cc70e7725932b841cf1006e4617a2af1359b15254313",
+      "bytes": 1149327
+    },
+    {
+      "path": "assets/notion-icons/osm/definition.png",
+      "sha256": "e51a61fcd443ce440a5360b883e27b0d400d88db23810b95d48f39ef3e2b5d34",
+      "bytes": 1151490
+    },
+    {
+      "path": "assets/notion-icons/osm/releases-documentation.png",
+      "sha256": "e93c0a235f9cd35f3888d3df94d3235b5fbe5412bf89e448cf9c1d321b48520a",
+      "bytes": 1184387
+    },
+    {
+      "path": "assets/notion-icons/osm/setup-tools.png",
+      "sha256": "fad4bfb81ee1f40cc127ad4463d8d17bf5ce115107cde1e8090360848d132034",
+      "bytes": 1103664
+    },
+    {
+      "path": "assets/notion-icons/osm/skills.png",
+      "sha256": "70d30463c36e2a9393b871b0addf30fbf59781a48b9660f349699ff1f8c6db28",
+      "bytes": 1594083
+    },
+    {
+      "path": "assets/notion-icons/osm/work-evaluation.png",
+      "sha256": "f844acc0f312dd89456fbf1b71b8667a45046f9d1f3996bf78d4b12a1d0e8230",
+      "bytes": 1104051
+    }
+  ]
+}

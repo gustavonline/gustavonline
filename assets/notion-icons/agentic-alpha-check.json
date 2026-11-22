@@ -1,0 +1,257 @@
+{
+  "check": "Read-only PNG alpha and dominant-color inspection; visual gallery also reviewed on three backgrounds",
+  "results": [
+    {
+      "path": "notion-icons/agentic/definition.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          344619
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          169025
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/skills.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          412860
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          100428
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/setup-tools.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          402127
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          110612
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/context-access.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          428117
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          85206
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/work-evaluation.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          418657
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          94312
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/automation-upkeep.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          385435
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          125868
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/reference-library.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          325831
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          187582
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/releases-documentation.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          340353
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          172393
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "path": "notion-icons/agentic/architecture.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          383292
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          130214
+        ]
+      ],
+      "ok": true
+    }
+  ]
+}
