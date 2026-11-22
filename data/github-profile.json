@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-22T11:05:12.258Z",
+  "generatedAt": "2026-11-22T13:08:36.262Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "ca2c117ce2cc733820bd9327116063774705bb91",
+  "sourceRevision": "26dae59da5940d6cf41cd053b3ce3e54d13ffa0d",
   "readmeSha256": "fc6b46fb16313cddf555baf6b3d2c54272d116c40134a6b4f309308257a6fe7d",
   "windowDays": 30,
   "projects": [
@@ -12,7 +12,7 @@
       "name": "Agentic System",
       "url": "https://github.com/arcitai/agentic-system",
       "description": "Build a good environment for capable agents to do useful work.",
-      "commits": 51,
+      "commits": 48,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -26,15 +26,15 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 225,
+      "commits": 232,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/42782949754f7547687f25e803941411db3629cf/README.md#why-i-built-this",
-        "revision": "42782949754f7547687f25e803941411db3629cf",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/4889a16b098114699670595b47ca4bc7f1e908d1/README.md#why-i-built-this",
+        "revision": "4889a16b098114699670595b47ca4bc7f1e908d1",
         "sha256": "e36bd8b33fc5b80a3df13e6e4fce716f32bd5e47c765b5724de82ccbc67cf961",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
@@ -134,7 +134,7 @@
       "name": "YouTube content",
       "url": "https://github.com/gustavonline/youtube-content",
       "description": "Notes, examples, and useful files to go with my YouTube videos.",
-      "commits": 0,
+      "commits": 4,
       "isPublic": true,
       "category": "resources",
       "status": "Resources",
@@ -159,7 +159,7 @@
   "contributions": {
     "from": "2025-11-23",
     "to": "2026-11-22",
-    "total": 44674,
+    "total": 44704,
     "weeks": [
       {
         "days": [
@@ -2558,7 +2558,7 @@
           {
             "date": "2026-11-22",
             "weekday": 0,
-            "count": 20,
+            "count": 50,
             "level": 1
           }
         ]
