@@ -51,114 +51,138 @@
       "bytes": 19659
     },
     {
-      "path": "assets/notion-icons/gustavonline/betting.png",
-      "sha256": "006012728a887ffdbe031851f4f0552bda02744f501e92b89a368a15675d5679",
-      "bytes": 1094681
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/books.png",
-      "sha256": "71dc08256b70715ccf39efc14d30b3282bce94ee1d3e7bdbf3c69c6271f6dc77",
-      "bytes": 1111574
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/business-home.png",
-      "sha256": "aa2d17aa6e2a28606ac39abaac8e637ee94deaca4d51ab0ee5d2178e200d0970",
-      "bytes": 1007366
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/clients.png",
-      "sha256": "3f5c9560d04680d450668ca39905c7c57397e60311d8fc214750aaa6db4ba1f9",
-      "bytes": 1143321
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/finance.png",
-      "sha256": "df7acf987f074aa767ec31e95744b38675a5ee001b784c429603b297464d60fc",
-      "bytes": 1101120
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/goals.png",
-      "sha256": "9142999b02fc9b1bbb478dfca083935a92a6bc2056845cce98964097a1e4e6eb",
-      "bytes": 1191702
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/journal.png",
-      "sha256": "9cb3f8abf65a5f5325f72da007b62457f990210421b37be3b534d9718b96b176",
-      "bytes": 1068725
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/mindset.png",
-      "sha256": "eb4b5a45d1aed38a97757268f89b299dbb5e2bbca53c3e6558d352ccd5d39a67",
-      "bytes": 1123573
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/monthly-planning.png",
-      "sha256": "2808b71e639035945617078b0c3f9f85615aa613e1362b52f72ca8f2a9ad8e03",
-      "bytes": 1140149
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/personal-home.png",
-      "sha256": "3c06841cc42e4a0b6e1e476cb25bcc7c36b70d6cd0587a47aa927f57c3233759",
-      "bytes": 1126784
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/projects.png",
-      "sha256": "09fa8793359dc9e8aac24a23bf39e912c2f817a52c17a2cdd17805bf2848995f",
-      "bytes": 1094319
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/study.png",
-      "sha256": "131a6981236189f7ffab57910e88f3b41d265d94f6559023eca472a81abc7374",
-      "bytes": 1181066
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/tasks.png",
-      "sha256": "82f9573e41042c01ba465ef6a95ef39e8181fe94f40ae1bff923842af6068b7b",
-      "bytes": 1128593
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/trading.png",
-      "sha256": "165d2c054a7902462c8b6d4a948c6609c10926049d19fd7b6cc0da9d596f51e0",
-      "bytes": 1116351
-    },
-    {
-      "path": "assets/notion-icons/gustavonline/workout.png",
-      "sha256": "7cac45ad4f9f5af210cccb349bfb68217a1dc3014072b9e91b596fc04673d2ba",
-      "bytes": 1065050
-    },
-    {
       "path": "assets/notion-icons/osm/architecture.png",
-      "sha256": "99437bcf43d06ba9ba8e61876fbff7eb970c0c383f58c83f3012ee1d93430379",
-      "bytes": 1086331
+      "sha256": "d80cbbf7b79dfa48360f0ed28ebbc2a86b5a8a210fb65ea81c4c9e42fa65dbd9",
+      "bytes": 603341
     },
     {
       "path": "assets/notion-icons/osm/automation-upkeep.png",
-      "sha256": "8e92d096d718ce1a0632cc70e7725932b841cf1006e4617a2af1359b15254313",
-      "bytes": 1149327
+      "sha256": "8275c8a319ffe347ee4ea6e5bcf8b04863aed74e62819e4e723d96514c183c79",
+      "bytes": 642069
+    },
+    {
+      "path": "assets/notion-icons/osm/content.png",
+      "sha256": "8f779610a7acf0bc4d9fe80591943701aaab44c9cd3726dee7023d91d4416865",
+      "bytes": 828217
     },
     {
       "path": "assets/notion-icons/osm/definition.png",
-      "sha256": "e51a61fcd443ce440a5360b883e27b0d400d88db23810b95d48f39ef3e2b5d34",
-      "bytes": 1151490
+      "sha256": "c8aa87c1156d7ea3480083a6d9808428f85d512ae771639210eddfdff77a1d99",
+      "bytes": 639511
+    },
+    {
+      "path": "assets/notion-icons/osm/knowledge.png",
+      "sha256": "c8aa87c1156d7ea3480083a6d9808428f85d512ae771639210eddfdff77a1d99",
+      "bytes": 639511
+    },
+    {
+      "path": "assets/notion-icons/osm/memory.png",
+      "sha256": "7792616f8881ff8afc9f543da8d92c7909c1e450b7fccaa8dfc3523e8fe8a3cd",
+      "bytes": 807653
     },
     {
       "path": "assets/notion-icons/osm/releases-documentation.png",
-      "sha256": "e93c0a235f9cd35f3888d3df94d3235b5fbe5412bf89e448cf9c1d321b48520a",
-      "bytes": 1184387
+      "sha256": "5ba7eacafe61ff306cef4ef63247341952d36e817e8fb205ba67a3d3b14eca05",
+      "bytes": 657433
     },
     {
       "path": "assets/notion-icons/osm/setup-tools.png",
-      "sha256": "fad4bfb81ee1f40cc127ad4463d8d17bf5ce115107cde1e8090360848d132034",
-      "bytes": 1103664
+      "sha256": "b3cee9cd6ab6ce2b87b42f6a25594b523ee9b54ff1c48149623e7ccc37b51f6d",
+      "bytes": 639228
     },
     {
       "path": "assets/notion-icons/osm/skills.png",
-      "sha256": "70d30463c36e2a9393b871b0addf30fbf59781a48b9660f349699ff1f8c6db28",
-      "bytes": 1594083
+      "sha256": "7424280296a92449ff2ec7048c795bf679c09d01ca2ffd9c8bb77b720015e9ab",
+      "bytes": 836630
     },
     {
       "path": "assets/notion-icons/osm/work-evaluation.png",
-      "sha256": "f844acc0f312dd89456fbf1b71b8667a45046f9d1f3996bf78d4b12a1d0e8230",
-      "bytes": 1104051
+      "sha256": "b67c4f60e1677f33c4c918c783d1ff51ee81fa092390b7c94f7c961ddb63ca4e",
+      "bytes": 616682
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/betting.png",
+      "sha256": "5d7a98b248f310ba8318c7beeff33828a6cafb894077ed4c4af916129f804e3a",
+      "bytes": 613424
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/books.png",
+      "sha256": "81e28468ef0fb46423e54cee7b131bd71c2995b328dd41002bbb0d5c24da05fd",
+      "bytes": 617967
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/business-home.png",
+      "sha256": "47886a14b852d4151b10024328e6e6df9033192eb185f1f4bc594fdd2b024de5",
+      "bytes": 565958
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/clients.png",
+      "sha256": "1014dcbd92dc198431f35b7f0bb63e136a73b2e65f62477951f2c92165485894",
+      "bytes": 634213
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/finance.png",
+      "sha256": "4ad812a4c9664948cdb4ef84754e947b1a2dd4aa286e9aec3b0621b559ece67f",
+      "bytes": 605979
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/goals.png",
+      "sha256": "d655c1cade456b9cc13700ab6fb8e32ba8e8ad10227c9e92dc64fe6da02e5e5f",
+      "bytes": 672265
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/journal.png",
+      "sha256": "e4815ebf7830a1bc8a3bb0c30e6b60e384e880252a1c35bb32f539c01be42b4a",
+      "bytes": 583026
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/mindset.png",
+      "sha256": "2b26deeed1e850303d9ac14165943b5007cd9cfd910dc54242f40fc193411f3e",
+      "bytes": 610530
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/monthly-planning.png",
+      "sha256": "81ca783439eb91a39245853b55b9c6b3b73eba07fd02e30b497d120114ddf30c",
+      "bytes": 635746
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/personal-home.png",
+      "sha256": "c7dca3ce5f59df047815b46aea86a2a7f5af051a65c8316912b212e924d1b785",
+      "bytes": 624301
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/projects.png",
+      "sha256": "f7d08aa35e78708b9fe4e5e9c709ef8540e5b4030067a5cb45caabd65cc7ca89",
+      "bytes": 609951
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/study.png",
+      "sha256": "08a592ebf570db174c7055c8b05b733b21cee5c0268fc3332e5b9be1a88d7630",
+      "bytes": 643938
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/tasks.png",
+      "sha256": "de0373bbd4dbf0e87352ccaddc852986b57a3fc1f42e8201b0ce88a32441b153",
+      "bytes": 637582
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/trading.png",
+      "sha256": "eec8890d86a2c544a567e348cc59feed855fa4c054da66b43108b53e84273621",
+      "bytes": 615573
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/workout.png",
+      "sha256": "2d10512878bb7ae4e93fe95b7f8f11c180a43c23bd560bc1ddec950173b5975e",
+      "bytes": 580964
     }
-  ]
+  ],
+  "shape": {
+    "canvas": 1024,
+    "x": 32,
+    "y": 32,
+    "size": 960,
+    "radius": 230,
+    "exterior": "transparent",
+    "interior": "original artwork, opaque"
+  }
 }

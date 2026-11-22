@@ -1,0 +1,1025 @@
+{
+  "check": "Read-only actual PNG alpha, rounded silhouette and opaque-interior checks; no pixel editing",
+  "results": [
+    {
+      "path": "assets/notion-icons/agentic/architecture.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          383292
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          130214
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/automation-upkeep.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          385435
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          125868
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/context-access.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          428117
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          85206
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/definition.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          344619
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          169025
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/reference-library.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          325831
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          187582
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/releases-documentation.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          340353
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          172393
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/setup-tools.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          402127
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          110612
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/skills.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          412860
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          100428
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/agentic/work-evaluation.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            66,
+            101,
+            160
+          ],
+          418657
+        ],
+        [
+          [
+            255,
+            250,
+            240
+          ],
+          94312
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/architecture.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            247,
+            239,
+            230
+          ],
+          85987
+        ],
+        [
+          [
+            246,
+            239,
+            230
+          ],
+          65559
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/automation-upkeep.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            246,
+            239,
+            230
+          ],
+          119565
+        ],
+        [
+          [
+            246,
+            239,
+            231
+          ],
+          67598
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/content.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            247,
+            240,
+            232
+          ],
+          80176
+        ],
+        [
+          [
+            247,
+            239,
+            231
+          ],
+          63196
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/definition.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            247,
+            239,
+            230
+          ],
+          83068
+        ],
+        [
+          [
+            247,
+            239,
+            229
+          ],
+          51903
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/knowledge.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            247,
+            239,
+            230
+          ],
+          83068
+        ],
+        [
+          [
+            247,
+            239,
+            229
+          ],
+          51903
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/memory.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            247,
+            240,
+            231
+          ],
+          72343
+        ],
+        [
+          [
+            247,
+            239,
+            230
+          ],
+          63156
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/releases-documentation.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            247,
+            239,
+            230
+          ],
+          117728
+        ],
+        [
+          [
+            246,
+            239,
+            230
+          ],
+          70383
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/setup-tools.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            246,
+            239,
+            230
+          ],
+          76872
+        ],
+        [
+          [
+            247,
+            240,
+            231
+          ],
+          72019
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/skills.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            246,
+            238,
+            229
+          ],
+          78910
+        ],
+        [
+          [
+            247,
+            239,
+            230
+          ],
+          64954
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/osm/work-evaluation.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            246,
+            239,
+            230
+          ],
+          94728
+        ],
+        [
+          [
+            246,
+            238,
+            229
+          ],
+          56237
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/betting.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            243,
+            243,
+            243
+          ],
+          113853
+        ],
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          77129
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/books.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          91341
+        ],
+        [
+          [
+            242,
+            242,
+            242
+          ],
+          64090
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/business-home.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          87747
+        ],
+        [
+          [
+            241,
+            242,
+            242
+          ],
+          56588
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/clients.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          101937
+        ],
+        [
+          [
+            242,
+            244,
+            243
+          ],
+          52419
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/finance.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            242
+          ],
+          89848
+        ],
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          88779
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/goals.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          75779
+        ],
+        [
+          [
+            242,
+            243,
+            242
+          ],
+          56787
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/journal.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            241,
+            243,
+            243
+          ],
+          113531
+        ],
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          74491
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/mindset.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            243,
+            243,
+            243
+          ],
+          121488
+        ],
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          101242
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/monthly-planning.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            242
+          ],
+          84103
+        ],
+        [
+          [
+            242,
+            242,
+            242
+          ],
+          62241
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/personal-home.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            241,
+            243,
+            243
+          ],
+          82794
+        ],
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          52252
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/projects.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          80729
+        ],
+        [
+          [
+            242,
+            244,
+            244
+          ],
+          58290
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/study.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          146447
+        ],
+        [
+          [
+            241,
+            242,
+            242
+          ],
+          31039
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/tasks.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            242
+          ],
+          78903
+        ],
+        [
+          [
+            241,
+            243,
+            242
+          ],
+          64474
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/trading.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            242,
+            243,
+            242
+          ],
+          100015
+        ],
+        [
+          [
+            242,
+            242,
+            242
+          ],
+          68990
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    },
+    {
+      "path": "assets/notion-icons/gustavonline/workout.png",
+      "width": 1024,
+      "height": 1024,
+      "interior_samples": 514089,
+      "interior_alpha_min": 255,
+      "interior_alpha_max": 255,
+      "transparent_corner_samples": 441,
+      "dominant_colors": [
+        [
+          [
+            243,
+            243,
+            243
+          ],
+          125058
+        ],
+        [
+          [
+            242,
+            243,
+            243
+          ],
+          91960
+        ]
+      ],
+      "shape_samples": 16384,
+      "bad_shape_samples": 0,
+      "ok": true
+    }
+  ]
+}
