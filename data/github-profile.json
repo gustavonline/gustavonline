@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-22T19:52:00.616Z",
+  "generatedAt": "2026-11-23T07:55:10.593Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "df58a1810d2c6dc34da56526e11dd721129c7f55",
+  "sourceRevision": "93abe093c719f9b5e7470fae38c3c8e6c8052043",
   "readmeSha256": "fc6b46fb16313cddf555baf6b3d2c54272d116c40134a6b4f309308257a6fe7d",
   "windowDays": 30,
   "projects": [
@@ -26,16 +26,16 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 230,
+      "commits": 242,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/e7270e88bec2e718cad61953bf34c043559bb7db/README.md#why-i-built-this",
-        "revision": "e7270e88bec2e718cad61953bf34c043559bb7db",
-        "sha256": "e36bd8b33fc5b80a3df13e6e4fce716f32bd5e47c765b5724de82ccbc67cf961",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/8f204a6d215c91ee48edf926a4571367950ebcc6/README.md#why-i-built-this",
+        "revision": "8f204a6d215c91ee48edf926a4571367950ebcc6",
+        "sha256": "432d2473c8695b553e6aa5714c72f3f8cf322d12bb1f8cba6bbaa343011baeea",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for context, onboarding, writing and collaboration. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
@@ -147,7 +147,7 @@
       "name": "Portfolio",
       "url": "https://github.com/gustavonline/gustavonline-website",
       "description": "Portfolio — my personal website, current projects, open source work and real GitHub activity.",
-      "commits": 36,
+      "commits": 39,
       "isPublic": true,
       "category": "resources",
       "status": "Open source",
@@ -157,18 +157,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-23",
-    "to": "2026-11-22",
-    "total": 44712,
+    "from": "2025-11-24",
+    "to": "2026-11-23",
+    "total": 44736,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-11-23",
-            "weekday": 0,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-11-24",
             "weekday": 1,
@@ -2558,8 +2552,14 @@
           {
             "date": "2026-11-22",
             "weekday": 0,
-            "count": 58,
+            "count": 82,
             "level": 1
+          },
+          {
+            "date": "2026-11-23",
+            "weekday": 1,
+            "count": 0,
+            "level": 0
           }
         ]
       }
