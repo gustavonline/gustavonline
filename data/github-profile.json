@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-23T07:55:10.593Z",
+  "generatedAt": "2026-11-24T22:38:34.493Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "93abe093c719f9b5e7470fae38c3c8e6c8052043",
+  "sourceRevision": "915171c04f2f96606a98445d2f6c5bef3deb133c",
   "readmeSha256": "fc6b46fb16313cddf555baf6b3d2c54272d116c40134a6b4f309308257a6fe7d",
   "windowDays": 30,
   "projects": [
@@ -26,20 +26,21 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 242,
+      "commits": 301,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/8f204a6d215c91ee48edf926a4571367950ebcc6/README.md#why-i-built-this",
-        "revision": "8f204a6d215c91ee48edf926a4571367950ebcc6",
-        "sha256": "432d2473c8695b553e6aa5714c72f3f8cf322d12bb1f8cba6bbaa343011baeea",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/51ae0cc771bc1b32e820a86453be7da09372c459/README.md#why-i-built-this",
+        "revision": "51ae0cc771bc1b32e820a86453be7da09372c459",
+        "sha256": "6388c17477da0ca81007d653181cde66fd69630ab8cadd8c2fe7f4c7db36ee30",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for context, onboarding, writing and collaboration. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
-          "Your context stays in a home you choose, in Notion. The app provides the models, tools and permissions; the method helps the assistant find and maintain the context it needs."
+          "Your context stays in a home you choose, in Notion. The app provides the models, tools and permissions; the method helps the assistant find and maintain the context it needs.",
+          "I'm Gustav Online (https://gustavonline.com/), the founder of onlinesourdough (https://onlinesourdough.com/). For optional hands-on help, The Fermentary (https://onlinesourdough.com/fermentary/) offers ongoing 1:1 work with me on your data, context and AI workflows."
         ]
       },
       "pinned": true,
@@ -157,18 +158,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-24",
-    "to": "2026-11-23",
-    "total": 44736,
+    "from": "2025-11-25",
+    "to": "2026-11-24",
+    "total": 44852,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-11-24",
-            "weekday": 1,
-            "count": 0,
-            "level": 0
-          },
           {
             "date": "2025-11-25",
             "weekday": 2,
@@ -2558,8 +2553,14 @@
           {
             "date": "2026-11-23",
             "weekday": 1,
-            "count": 0,
-            "level": 0
+            "count": 71,
+            "level": 1
+          },
+          {
+            "date": "2026-11-24",
+            "weekday": 2,
+            "count": 45,
+            "level": 1
           }
         ]
       }
