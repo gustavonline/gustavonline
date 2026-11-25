@@ -9,7 +9,7 @@ Build tools and workflows you can keep improving with [onlinesourdough](https://
 ## Working on right now
 
 <!-- active-projects:start -->
-- [Agentic System](https://github.com/arcitai/agentic-system): Build a good environment for capable agents to do useful work.
+- [Agentic System](https://github.com/arcitai/agentic-system): Prepare useful working ground for AI: a clear outcome, reliable context, suitable tools and a way to judge the result.
 - [The Onlinesourdough Method](https://github.com/onlinesourdough/OSM-plugin): I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.
 - [OpenPaperDesign](https://github.com/gustavonline/openpaperdesign): Canvas for your agent. Create layouts and graphics, map an architecture, inspect spacing and colours, leave comments, and export your work.
 <!-- active-projects:end -->
