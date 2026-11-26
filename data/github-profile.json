@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-26T08:39:16.126Z",
+  "generatedAt": "2026-11-26T21:45:12.211Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "0c909dc0120149c99632ab15873b5765498470e0",
+  "sourceRevision": "01b2dad80a295fd025f26fe3ca7398552439ed03",
   "readmeSha256": "63873f4f6f521512851fd4fa0aea2a9e063e880ac283caef21ac566bf6588c82",
   "windowDays": 30,
   "projects": [
@@ -12,7 +12,7 @@
       "name": "Agentic System",
       "url": "https://github.com/arcitai/agentic-system",
       "description": "Prepare useful working ground for AI: a clear outcome, reliable context, suitable tools and a way to judge the result.",
-      "commits": 45,
+      "commits": 41,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -26,21 +26,21 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 315,
+      "commits": 328,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
       "icon": "/assets/project-marks/aios.svg",
       "readme": {
         "section": "Why I built this",
-        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/7f2bf3b6ef9ee933d64515ab440903a993a1323e/README.md#why-i-built-this",
-        "revision": "7f2bf3b6ef9ee933d64515ab440903a993a1323e",
-        "sha256": "6388c17477da0ca81007d653181cde66fd69630ab8cadd8c2fe7f4c7db36ee30",
+        "url": "https://github.com/onlinesourdough/OSM-plugin/blob/ddb6f8746b4fb7d00a368eaa8a9d95688199b7e6/README.md#why-i-built-this",
+        "revision": "ddb6f8746b4fb7d00a368eaa8a9d95688199b7e6",
+        "sha256": "6d9c9df589378737ae984099db3444edd4dbc48f0f39fe2043a7c208ecca5313",
         "paragraphs": [
           "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
           "The method installs as a native plugin in Codex and Claude Code and adds reusable skills for context, onboarding, writing and collaboration. It builds on open formats such as Agent Skills and on what those apps already provide, so I mostly write methods and small adaptations, with little code to maintain.",
           "Your context stays in a home you choose, in Notion. The app provides the models, tools and permissions; the method helps the assistant find and maintain the context it needs.",
-          "I'm Gustav Online (https://gustavonline.com/), the founder of onlinesourdough (https://onlinesourdough.com/). For optional hands-on help, The Fermentary (https://onlinesourdough.com/fermentary/) offers ongoing 1:1 work with me on your data, context and AI workflows."
+          "I am Gustav Online (https://gustavonline.com/), the founder of onlinesourdough (https://onlinesourdough.com/). For optional hands-on help, The Fermentary (https://onlinesourdough.com/fermentary/) offers ongoing 1:1 work with me on your data, context and AI workflows."
         ]
       },
       "pinned": true,
@@ -160,7 +160,7 @@
   "contributions": {
     "from": "2025-11-27",
     "to": "2026-11-26",
-    "total": 44892,
+    "total": 44922,
     "weeks": [
       {
         "days": [
@@ -2559,7 +2559,7 @@
           {
             "date": "2026-11-26",
             "weekday": 4,
-            "count": 1,
+            "count": 31,
             "level": 1
           }
         ]
