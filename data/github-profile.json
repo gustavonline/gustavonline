@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-27T21:29:02.084Z",
+  "generatedAt": "2026-11-28T08:08:35.455Z",
   "sourceReadme": "https://github.com/gustavonline/gustavonline/blob/main/README.md",
-  "sourceRevision": "fd8a50390316afc72881108fed62e9b1c98e94b7",
+  "sourceRevision": "5cae1b0cd7eaa125e9af9b9f8a1bf709d8a1fe91",
   "readmeSha256": "63873f4f6f521512851fd4fa0aea2a9e063e880ac283caef21ac566bf6588c82",
   "windowDays": 30,
   "projects": [
@@ -26,7 +26,7 @@
       "name": "The Onlinesourdough Method",
       "url": "https://github.com/onlinesourdough/OSM-plugin",
       "description": "I built The Onlinesourdough Method to give AI assistants a useful foundation: relevant data, business context and reusable ways of working, kept in sources I control.",
-      "commits": 320,
+      "commits": 318,
       "isPublic": true,
       "category": "tools",
       "status": "Open source",
@@ -158,18 +158,12 @@
     }
   ],
   "contributions": {
-    "from": "2025-11-28",
-    "to": "2026-11-27",
-    "total": 44918,
+    "from": "2025-11-29",
+    "to": "2026-11-28",
+    "total": 44915,
     "weeks": [
       {
         "days": [
-          {
-            "date": "2025-11-28",
-            "weekday": 5,
-            "count": 3,
-            "level": 1
-          },
           {
             "date": "2025-11-29",
             "weekday": 6,
@@ -2561,6 +2555,12 @@
             "weekday": 5,
             "count": 5,
             "level": 1
+          },
+          {
+            "date": "2026-11-28",
+            "weekday": 6,
+            "count": 0,
+            "level": 0
           }
         ]
       }
